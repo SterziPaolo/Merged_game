@@ -6,7 +6,7 @@ import Loading from '../components/core/Loading';
 const STATIC_URL = [
     'https://monopoly-skills.lovable.app/',
     'https://adaptive-lifetrack.lovable.app/',
-    'https://claude.ai/public/artifacts/9f864fe0-66e5-416f-a777-149d47edb339?fullscreen=true',
+    'https://matcho.vercel.app/',
 ]
 
 export default function MainView({ fullScreen }) {
