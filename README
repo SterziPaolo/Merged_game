@@ -1,0 +1,34 @@
+File Structure:
+    data: this file is reffered to the virtual data from database to use locally
+    src: the main folder
+        start point:  main.jsx
+            In this file, we use the function called 'configureStore' to refer the store in local storage
+            And then also use the provider tag to connect the store with the components
+            Also use the App component, which is the main component that contains the overall routers and exacting components
+        assets folder:
+            This folder is used to support the external resources, for example, images, logos
+        components folder:
+            File Structure:
+                common: this folder includes the common components, which are customized to use frequently
+                core: this folder contains the overall components used in the framework
+        hooks folder:
+            This folder is used to define customized hooks
+        pages folder:
+            This folder stands for the main components to refer in the file structure
+        reducer folder:
+            In this folder, we define the index.js file to create the store instance, this means that here is the root of store
+        services folder:
+            We can see the customized functions used to define operations for the specific tech
+            This content is considered the redux in previous react framework structure for development
+            for example: apiConnect.js file is created to define the api interface to connect the backend
+        slices folder:
+            This file is the instance of the specific values stored in local storage
+        utils:
+            this folder is created to define the constants or calculating the average, decoration of date format
+
+Specials:
+    useSelector: this function is for the reference of the storage
+        method: useSelector(state => {state.profile})
+        description: this function returns the profile store value
+    
+        
