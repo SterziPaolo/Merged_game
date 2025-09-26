@@ -34,7 +34,7 @@ export default function MainView({ fullScreen, dispSelChange }) {
                 <iframe
                     ref={iframeRef}
                     onLoad={() => setIsLoaded(true)}
-                    className={`w-full min-w-[375px] h-[calc(100vh-110px)] overflow-hidden ${currSel === 0 ? 'rounded-xl' : ''}`}
+                    className={`w-full ${fullScreen ? 'h-[100vh]' : 'min-w-[375px] h-[calc(100vh-110px)]'} overflow-hidden ${currSel === 0 ? 'rounded-xl' : ''}`}
                     title='Advert'
                     src={STATIC_URL[currSel]}
                     allowFullScreen
