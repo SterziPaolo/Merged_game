@@ -7,7 +7,7 @@ export default function FullScreenActionButton({ onToggleAction, fullScreen }) {
         <div className={'absolute right-5 top-5'}>
             <button
                 onClick={onToggleAction}
-                className='bg-green-100 w-[40px] h-[40px] rounded-xl text-white font-bold active:bg-green-300 hover:border border-green-300'>
+                className='bg-green-100 w-[40px] h-[40px] rounded-xl text-white font-bold active:bg-green-300 border hover:border-green-300'>
                 {!fullScreen ?
                     <span className='flex items-center justify-center rotate-[-45deg]'>
                         <AiOutlineArrowLeft />

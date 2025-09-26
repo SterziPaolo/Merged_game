@@ -1,20 +1,22 @@
-import React, { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 import ActionButton from '../components/core/ActionButton';
 import Loading from '../components/core/Loading';
-import { STATIC_URL } from '../utils/constants';
 import IframeHeader from '../components/core/IframeHeader';
+import { STATIC_URL } from '../utils/constants';
 
-export default function MainView({ fullScreen }) {
+export default function MainView({ fullScreen, dispSelChange }) {
     const [currSel, setCurrSel] = useState(0);
     const [isLoaded, setIsLoaded] = useState(true);
 
     const iframeRef = useRef(null);
 
+    useEffect(() => (
+        dispSelChange(currSel)
+    ), [currSel])
+
     const onHandleAction = (actionType) => {
         setIsLoaded(false);
-
-        console.log(actionType)
 
         if (actionType === 'prev') {
             setCurrSel(currSel === 0 ? STATIC_URL.length - 1 : currSel - 1);
@@ -28,11 +30,11 @@ export default function MainView({ fullScreen }) {
         <div className={` ${!fullScreen ? 'px-4 py-4' : ''}`}>
             {!isLoaded && <Loading />}
             {currSel !== 0 ? <IframeHeader /> : <></>}
-            <div className='h-[calc(100vh-110px)] flex flex-1'>
+            <div className='flex flex-1'>
                 <iframe
                     ref={iframeRef}
                     onLoad={() => setIsLoaded(true)}
-                    className={`w-full min-w-[375px] overflow-hidden ${currSel === 0 ? 'rounded-xl' : ''}`}
+                    className={`w-full min-w-[375px] h-[calc(100vh-110px)] overflow-hidden ${currSel === 0 ? 'rounded-xl' : ''}`}
                     title='Advert'
                     src={STATIC_URL[currSel]}
                     allowFullScreen
