@@ -25,7 +25,7 @@ export default function Header({ onHandleFullScreenMode, onHandleInformationModa
                         />
                         <p className='font-bold text-4xl text-white italic'>{MARK_TEXT}</p>
                     </div>
-                    <div className='flex flex-col gap-x-1'>
+                    <div className='flex flex-row gap-x-3'>
                         <InformationButton onHandleClick={onHandleInformationModal}/>
                         <FullScreenActionButton onToggleAction={onHandleChange} fullScreen={isVisible} />
                     </div>

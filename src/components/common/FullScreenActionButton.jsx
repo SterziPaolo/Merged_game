@@ -4,7 +4,7 @@ import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
 export default function FullScreenActionButton({ onToggleAction, fullScreen }) {
 
     return (
-        <div className={'absolute right-5 top-5'}>
+        <div className={`${fullScreen ? 'absolute right-5 top-5' : ''}`}>
             <button
                 onClick={onToggleAction}
                 className='bg-green-100 w-[40px] h-[40px] rounded-xl text-white font-bold active:bg-green-300 border hover:border-green-300'>
