@@ -2,12 +2,8 @@ import React, { useState, useRef } from 'react'
 
 import ActionButton from '../components/core/ActionButton';
 import Loading from '../components/core/Loading';
-
-const STATIC_URL = [
-    'https://monopoly-skills.lovable.app/',
-    'https://adaptive-lifetrack.lovable.app/',
-    'https://matcho.vercel.app/',
-]
+import { STATIC_URL } from '../utils/constants';
+import IframeHeader from '../components/core/IframeHeader';
 
 export default function MainView({ fullScreen }) {
     const [currSel, setCurrSel] = useState(0);
@@ -29,17 +25,20 @@ export default function MainView({ fullScreen }) {
     }
 
     return (
-        <div className={`flex flex-1 ${!fullScreen ? 'px-4 py-4' : ''}`}>
+        <div className={` ${!fullScreen ? 'px-4 py-4' : ''}`}>
             {!isLoaded && <Loading />}
-            <iframe
-                ref={iframeRef}
-                onLoad={() => setIsLoaded(true)}
-                className='w-full rounded-xl  min-w-[375px] overflow-hidden'
-                title='Advert'
-                src={STATIC_URL[currSel]}
-                allowFullScreen
-            >
-            </iframe>
+            {currSel !== 0 ? <IframeHeader /> : <></>}
+            <div className='h-[calc(100vh-110px)] flex flex-1'>
+                <iframe
+                    ref={iframeRef}
+                    onLoad={() => setIsLoaded(true)}
+                    className={`w-full min-w-[375px] overflow-hidden ${currSel === 0 ? 'rounded-xl' : ''}`}
+                    title='Advert'
+                    src={STATIC_URL[currSel]}
+                    allowFullScreen
+                >
+                </iframe>
+            </div>
 
             <ActionButton onHandleAction={onHandleAction} />
         </div>
