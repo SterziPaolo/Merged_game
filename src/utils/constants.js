@@ -6,6 +6,6 @@ export const STATIC_URL = [
 
 export const TEXT_INFORMATION = [
     "Carica i dati del team, definisci il job profile, aggiungi i CV dei candidati e lascia che l'AI analizzi ogni profilo fornendo valutazioni oggettive su Job Fit, Team Fit e raccomandazioni finali.(Matcho)",
-    "Scegli i tuoi obiettivi, affronta decisioni lavorative realistiche e scopri come le tue scelte plasmano il tuo profilo professionale. Al termine ricevi un'analisi personalizzata delle tue competenze e attitudini. (The Sims)",
     "Le tue scelte verranno analizzate per misurare: risk taking, pensiero strategico, gestione risorse, velocità decisionale (Monopoly)",
+    "Scegli i tuoi obiettivi, affronta decisioni lavorative realistiche e scopri come le tue scelte plasmano il tuo profilo professionale. Al termine ricevi un'analisi personalizzata delle tue competenze e attitudini. (The Sims)",
 ]
