@@ -8,9 +8,9 @@ export default function TextModal({ onShow, context }) {
     useOnClickOutside(ref, () => onShow(false))
     return (
         <div className='absolute w-full h-full  flex justify-center items-center'>
-            <div className='w-full h-full bg-black opacity-20' />
+            <div className='w-full h-full bg-black opacity-40' />
             <div
-                className='absolute flex flex-col top-[30%] right-[30%] w-[40rem] !bg-white rounded-xl p-10 z-[1000]'
+                className='absolute flex flex-col top-[30%] right-[30%] w-[40rem] !bg-white rounded-xl px-10 pt-10 pb-5 z-[1000]'
                 ref={ref}
             >
                 <button
@@ -18,7 +18,7 @@ export default function TextModal({ onShow, context }) {
                     className='absolute top-1 right-1 p-2 hover:rounded-full hover:bg-[#cbcfd9] hover:text-white'>
                     <AiOutlineClose />
                 </button>
-                <p className='mb-10'>
+                <p className='mb-10 pb-3'>
                     {context}
                 </p>
                 <button
