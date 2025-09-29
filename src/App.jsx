@@ -15,10 +15,11 @@ function App() {
 
   return (
     <div className='w-screen min-h-screen bg-blackskin-100 flex flex-col font-inte'>
-      <Header 
+      <Header
+        dispSel={dispSel}
         onHandleFullScreenMode={() => setAllowFullScreen((prev) => !prev)}
         onHandleInformationModal={() => setModalOpen((prev) => !prev)}
-         />
+      />
       <MainView fullScreen={allowFullScreen} dispSelChange={handleDispSel} />
       <InformationModal open={modalOpen} dispSel={dispSel} modalHandle={() => setModalOpen((prev) => !prev)} />
     </div>

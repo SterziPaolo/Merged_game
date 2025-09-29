@@ -17,7 +17,6 @@ export default function MainView({ fullScreen, dispSelChange }) {
 
     const onHandleAction = (actionType) => {
         setIsLoaded(false);
-
         if (actionType === 'prev') {
             setCurrSel(currSel === 0 ? STATIC_URL.length - 1 : currSel - 1);
         }
@@ -32,6 +31,7 @@ export default function MainView({ fullScreen, dispSelChange }) {
             {currSel !== 0 ? <IframeHeader /> : <></>}
             <div className='flex flex-1'>
                 <iframe
+                    id='id="iframe-content"'
                     ref={iframeRef}
                     onLoad={() => setIsLoaded(true)}
                     className={`w-full ${fullScreen ? 'h-[100vh]' : 'min-w-[375px] h-[calc(100vh-110px)]'} overflow-hidden ${currSel === 0 ? 'rounded-xl' : ''}`}
