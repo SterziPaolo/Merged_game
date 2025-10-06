@@ -3,7 +3,7 @@ import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
 
 const ActionButton = ({ onHandleAction }) => {
     return (
-        <div className='absolute bottom-10 w-full flex justify-between px-10'>
+        <div className='fixed bottom-10 w-full flex justify-between px-10'>
             <button
                 className='
                     px-[12px] py-[8px] rounded-[12px] font-bold bg-green-200 text-white border-green-50
