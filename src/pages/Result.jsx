@@ -8,7 +8,7 @@ const Result = () => {
     return (
         <div>
             <ContentHeader />
-            <div className="mb-6 mt-10 px-5">
+            <div className="mb-6 mt-10 px-5 mx-auto">
                 <h2 className="text-lg font-semibold mb-2">Risultati Analisi AI</h2>
                 <p className="text-gray-600 mb-6">
                     Analisi completa dei candidati con punteggi separati per Job Fit, Team Fit e valutazione finale.
