@@ -6,7 +6,7 @@ import ContentHeader from '../components/core/Matcho/ContentHeader';
 
 const Result = () => {
     return (
-        <div>
+        <div className='w-full'>
             <ContentHeader />
             <div className="mb-6 mt-10 px-5 mx-auto">
                 <h2 className="text-lg font-semibold mb-2">Risultati Analisi AI</h2>
