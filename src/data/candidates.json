@@ -1,0 +1,32 @@
+[
+    { 
+      "id": "1", 
+      "name": "'Marco Bianchi'", 
+      "jobFit": "87", 
+      "teamFit": "92", 
+      "finalScore": "89",
+      "jobReason": "Esperienza solida in React e Node.js, competenze tecniche allineate",
+      "teamReason": "Stile collaborativo, orientato al problem-solving creativo",
+      "finalReason": "Candidato eccellente, alta compatibilità su tutti i fronti'"
+    },
+    { 
+      "id": "2", 
+      "name": "Giulia Rossi", 
+      "jobFit": "94", 
+      "teamFit": "78", 
+      "finalScore": "86",
+      "jobReason": "Competenze tecniche superiori, esperienza in architetture scalabili",
+      "teamReason": "Approccio più diretto, potrebbe necessitare di adattamento al team",
+      "finalReason": "Ottimo match tecnico, da valutare integrazione nel team"
+    },
+    { 
+      "id": "3", 
+      "name": "'Andrea Verdi'", 
+      "jobFit": "76", 
+      "teamFit": "85", 
+      "finalScore": "80",
+      "jobReason": "Competenze tecniche buone ma manca esperienza in alcune aree chiave",
+      "teamReason": "Personalità molto allineata ai valori del team",
+      "finalReason": "Buon potenziale, necessita di formazione tecnica mirata"
+    }
+  ]

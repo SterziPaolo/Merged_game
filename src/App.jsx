@@ -1,27 +1,28 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom';
 
 import Header from './pages/Header';
 import MainView from './pages/MainView';
-import InformationModal from './pages/InformationModal';
+import Matcho from './pages/Matcho'
+import Result from './pages/Result'
+import IframeView from './components/core/IframeView.jsx'
+import PageNotFound from './pages/PageNotFound.jsx';
 
 function App() {
   const [allowFullScreen, setAllowFullScreen] = useState(false)
-  const [dispSel, setDispSel] = useState(0);
-  const [modalOpen, setModalOpen] = useState(false)
-
-  const handleDispSel = (sel) => {
-    setDispSel(sel)
-  }
 
   return (
     <div className='w-screen min-h-screen bg-blackskin-100 flex flex-col font-inte'>
-      <Header
-        dispSel={dispSel}
-        onHandleFullScreenMode={() => setAllowFullScreen((prev) => !prev)}
-        onHandleInformationModal={() => setModalOpen((prev) => !prev)}
-      />
-      <MainView fullScreen={allowFullScreen} dispSelChange={handleDispSel} />
-      <InformationModal open={modalOpen} dispSel={dispSel} modalHandle={() => setModalOpen((prev) => !prev)} />
+      <Header onHandleFullScreenMode={() => setAllowFullScreen((prev) => !prev)} />
+      <Routes>
+        <Route element={<MainView fullScreen={allowFullScreen} />}>
+          <Route path='/matcho' element={<Matcho />} />
+          <Route path='/result' element={<Result />} />
+          <Route path='/iframes/:id' element={<IframeView />} />
+
+          <Route path="*" element={<PageNotFound />} />
+        </Route>
+      </Routes>
     </div>
   )
 }

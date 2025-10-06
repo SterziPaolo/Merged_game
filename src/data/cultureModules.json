@@ -1,0 +1,5 @@
+[
+    { "id": "startup", "name": "Startup Agile", "description": "Velocità, innovazione, flessibilità" },
+    { "id": "corporate", "name": "Corporate Tradizionale", "description": "Struttura, processi, stabilità" },
+    { "id": "tech", "name": "Tech Company", "description": "Meritocracy, data-driven, scaling" }
+]
