@@ -1,0 +1,122 @@
+[
+  {
+    "id": "business",
+    "title": "Build a Successful Business",
+    "description": "Create and scale a profitable company",
+    "functional": true,
+    "influence": ["motivation", "risk", "strategic"],
+    "image": "../../../../src/assets/goal-business.png"
+  },
+  {
+    "id": "creative",
+    "title": "Become a Renowned Creative Professional",
+    "description": "Create notable work in arts & design",
+    "functional": true,
+    "influence": ["adaptability", "cognitive", "self"],
+    "image": "../../../../src/assets/goal-creative.png"
+  },
+  {
+    "id": "impact",
+    "title": "Create Positive Social/Environmental Impact",
+    "description": "Lead initiatives that change communities",
+    "functional": true,
+    "influence": ["ethics", "motivation", "dedication"],
+    "image": "../../../../src/assets/goal-impact.png"
+  },
+  {
+    "id": "freedom",
+    "title": "Achieve Financial Freedom & Personal Stability",
+    "description": "Build financial independence and balance",
+    "functional": true,
+    "influence": ["strategic", "risk", "dedication"],
+    "image": "../../../../src/assets/goal-freedom.png"
+  },
+  {
+    "id": "academic",
+    "title": "Academic Excellence",
+    "description": "Pursue high-level research or education",
+    "functional": false,
+    "mapTo": "creative",
+    "image": "../../../../src/assets/goal-academic.png"
+  },
+  {
+    "id": "family",
+    "title": "Family-focused Life",
+    "description": "Prioritize family & relationships",
+    "functional": false,
+    "mapTo": "freedom",
+    "image": "../../../../src/assets/goal-family.png"
+  },
+  {
+    "id": "traveler",
+    "title": "Global Traveler",
+    "description": "Explore the world & cultures",
+    "functional": false,
+    "mapTo": "creative",
+    "image": "../../../../src/assets/goal-traveler.png"
+  },
+  {
+    "id": "public",
+    "title": "Public Office",
+    "description": "Make policy-level impact",
+    "functional": false,
+    "mapTo": "impact",
+    "image": "../../../../src/assets/goal-public.png"
+  },
+  {
+    "id": "health",
+    "title": "Health & Wellness Leader",
+    "description": "Promote wellbeing and fitness",
+    "functional": false,
+    "mapTo": "business",
+    "image": "../../../../src/assets/goal-health.png"
+  },
+  {
+    "id": "technical",
+    "title": "Technical Mastery",
+    "description": "Become a high-level technical expert",
+    "functional": false,
+    "mapTo": "freedom",
+    "image": "../../../../src/assets/goal-technical.png"
+  },
+  {
+    "id": "social",
+    "title": "Social Media Creator",
+    "description": "Build a personal brand online",
+    "functional": false,
+    "mapTo": "creative",
+    "image": "../../../../src/assets/goal-social.png"
+  },
+  {
+    "id": "nonprofit",
+    "title": "Non-profit Founder",
+    "description": "Serve communities through an NGO",
+    "functional": false,
+    "mapTo": "impact",
+    "image": "../../../../src/assets/goal-nonprofit.png"
+  },
+  {
+    "id": "luxury",
+    "title": "Luxury Lifestyle",
+    "description": "Attain a premium lifestyle",
+    "functional": false,
+    "mapTo": "freedom",
+    "image": "../../../../src/assets/goal-freedom.png"
+  },
+  {
+    "id": "crafts",
+    "title": "Crafts & Artisan Life",
+    "description": "Create handmade works & small biz",
+    "functional": false,
+    "mapTo": "creative",
+    "image": "../../../../src/assets/goal-creative.png"
+  },
+  {
+    "id": "education",
+    "title": "Educational Influencer",
+    "description": "Teach & influence learning",
+    "functional": false,
+    "mapTo": "impact",
+    "image": "../../../../src/assets/goal-impact.png"
+  }
+]

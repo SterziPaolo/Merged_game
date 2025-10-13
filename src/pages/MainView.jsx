@@ -1,25 +1,15 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate, Outlet } from 'react-router-dom';
 
 import ActionButton from '../components/core/ActionButton';
-import { useNavigate, Outlet } from 'react-router-dom';
+import { STATIC_NAVIGATE_TO } from '../utils/constants';
 
 export default function MainView({ fullScreen }) {
     const [currSel, setCurrSel] = useState(0);
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (currSel === 1) {
-            navigate("/monopolygame");
-        }
-        else if (currSel === 2) {
-            navigate("/matcho");
-        }
-        else if (currSel === 3) {
-            navigate("/result")
-        }
-        else {
-            navigate(`/iframes/${currSel}`)
-        }
+        navigate(`${STATIC_NAVIGATE_TO[currSel]}`)
     }, [currSel])
 
     const onHandleAction = (actionType) => {

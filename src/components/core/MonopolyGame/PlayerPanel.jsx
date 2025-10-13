@@ -76,7 +76,7 @@ const PlayerPanel = ({ player, turn, assessmentData }) => {
       <Card>
         <CardHeader>
           <CardTitle className="text-lg">Valutazione Competenze</CardTitle>
-          <p className="text-xs text-gray-500">Analisi in tempo reale delle tue decisioni</p>
+          <p className="text-[0.75rem] text-gray-500">Analisi in tempo reale delle tue decisioni</p>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">

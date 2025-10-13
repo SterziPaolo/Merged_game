@@ -1,0 +1,1106 @@
+[
+  {
+    "id": "motivation",
+    "category": "Motivation / Leadership",
+    "templates": [
+      {
+        "text": "Your team is facing a challenging deadline on a high-visibility project. The lead developer just quit unexpectedly, leaving everyone demoralized.",
+        "contexts": ["startup", "corporation", "agency", "nonprofit"],
+        "options": [
+          {
+            "label": "Step up as interim lead",
+            "description": "Take charge and rally the team",
+            "icon": "👑",
+            "effects": { "motivation": 3, "dedication": 1, "risk": 1 }
+          },
+          {
+            "label": "Negotiate deadline extension",
+            "description": "Focus on realistic timeline",
+            "icon": "📅",
+            "effects": { "strategic": 2, "ethics": 1, "motivation": -1 }
+          },
+          {
+            "label": "Redistribute work equally",
+            "description": "Share the burden across team",
+            "icon": "🤝",
+            "effects": { "ethics": 2, "adaptability": 1, "self": -1 }
+          }
+        ]
+      },
+      {
+        "text": "You've been offered a chance to pitch your innovative idea directly to the CEO, but it means going over your manager's head.",
+        "contexts": ["tech company", "consulting firm", "healthcare org", "financial institution"],
+        "options": [
+          {
+            "label": "Take the opportunity boldly",
+            "description": "Present directly to leadership",
+            "icon": "🎯",
+            "effects": { "motivation": 3, "risk": 2, "ethics": -1 }
+          },
+          {
+            "label": "Include your manager",
+            "description": "Collaborate on the presentation",
+            "icon": "🤝",
+            "effects": { "ethics": 2, "strategic": 1, "motivation": 1 }
+          },
+          {
+            "label": "Decline respectfully",
+            "description": "Wait for proper channels",
+            "icon": "⏳",
+            "effects": { "ethics": 1, "self": 1, "motivation": -2 }
+          }
+        ]
+      },
+      {
+        "text": "A major client threatens to leave unless you personally oversee their project, requiring 60-hour weeks for three months.",
+        "contexts": ["consulting", "architecture firm", "marketing agency", "law firm"],
+        "options": [
+          {
+            "label": "Accept the challenge",
+            "description": "Commit fully to client success",
+            "icon": "💪",
+            "effects": { "motivation": 3, "dedication": 2, "self": -2 }
+          },
+          {
+            "label": "Propose team solution",
+            "description": "Suggest rotating leadership",
+            "icon": "👥",
+            "effects": { "strategic": 2, "adaptability": 2, "motivation": 1 }
+          },
+          {
+            "label": "Recommend colleague",
+            "description": "Pass to more available team member",
+            "icon": "🔄",
+            "effects": { "self": 2, "ethics": 1, "motivation": -1 }
+          }
+        ]
+      },
+      {
+        "text": "Your department budget has been cut by 40%. You must either lay off team members or find creative cost-cutting solutions.",
+        "contexts": ["corporate division", "nonprofit", "startup", "government agency"],
+        "options": [
+          {
+            "label": "Innovate operations",
+            "description": "Find efficiency improvements",
+            "icon": "💡",
+            "effects": { "motivation": 3, "cognitive": 2, "strategic": 1 }
+          },
+          {
+            "label": "Negotiate with leadership",
+            "description": "Fight for your team's funding",
+            "icon": "🗣️",
+            "effects": { "motivation": 2, "ethics": 2, "risk": 1 }
+          },
+          {
+            "label": "Make strategic cuts",
+            "description": "Focus on minimal layoffs",
+            "icon": "✂️",
+            "effects": { "strategic": 2, "self": -1, "ethics": -1 }
+          }
+        ]
+      },
+      {
+        "text": "An industry conference offers you a speaking slot on a topic you're passionate about, but you'd need to develop expertise quickly.",
+        "contexts": ["tech conference", "business summit", "academic symposium", "trade show"],
+        "options": [
+          {
+            "label": "Accept and research intensively",
+            "description": "Commit to rapid learning",
+            "icon": "📚",
+            "effects": { "motivation": 3, "cognitive": 2, "dedication": 1 }
+          },
+          {
+            "label": "Suggest alternative topic",
+            "description": "Speak on current expertise",
+            "icon": "🎤",
+            "effects": { "strategic": 2, "motivation": 1, "risk": -1 }
+          },
+          {
+            "label": "Decline gracefully",
+            "description": "Wait for better opportunity",
+            "icon": "🚫",
+            "effects": { "self": 1, "strategic": 1, "motivation": -2 }
+          }
+        ]
+      },
+      {
+        "text": "Your company is launching a mentorship program and you're asked to either mentor junior employees or focus solely on your own advancement.",
+        "contexts": ["corporate", "consulting", "tech company", "nonprofit"],
+        "options": [
+          {
+            "label": "Become an active mentor",
+            "description": "Invest time in developing others",
+            "icon": "🌱",
+            "effects": { "motivation": 2, "ethics": 2, "dedication": 1, "self": -1 }
+          },
+          {
+            "label": "Focus on self-development",
+            "description": "Prioritize your own career growth",
+            "icon": "🎯",
+            "effects": { "self": 3, "motivation": 1, "cognitive": 1 }
+          },
+          {
+            "label": "Create peer learning groups",
+            "description": "Build collaborative learning environment",
+            "icon": "👥",
+            "effects": { "strategic": 2, "adaptability": 1, "ethics": 1 }
+          }
+        ]
+      },
+      {
+        "text": "You're offered to lead a high-risk, high-reward project that could either accelerate your career or damage your reputation.",
+        "contexts": ["startup", "innovation lab", "consulting", "research"],
+        "options": [
+          {
+            "label": "Take on the challenge",
+            "description": "Lead the risky project boldly",
+            "icon": "🚀",
+            "effects": { "motivation": 3, "risk": 3, "dedication": 1 }
+          },
+          {
+            "label": "Negotiate for team support",
+            "description": "Take it with additional resources",
+            "icon": "🤝",
+            "effects": { "strategic": 2, "motivation": 1, "adaptability": 1 }
+          },
+          {
+            "label": "Recommend a colleague",
+            "description": "Pass the opportunity to someone else",
+            "icon": "👋",
+            "effects": { "self": 2, "ethics": 1, "motivation": -2 }
+          }
+        ]
+      },
+      {
+        "text": "Your team needs to learn three different new software platforms to stay competitive, but training would require significant time investment.",
+        "contexts": ["tech company", "design agency", "consulting firm", "marketing"],
+        "options": [
+          {
+            "label": "Master all platforms personally",
+            "description": "Become the technical expert",
+            "icon": "🎯",
+            "effects": { "motivation": 2, "cognitive": 3, "dedication": 2 }
+          },
+          {
+            "label": "Create team learning program",
+            "description": "Distribute learning across team",
+            "icon": "👥",
+            "effects": { "strategic": 2, "adaptability": 2, "ethics": 1 }
+          },
+          {
+            "label": "Outsource technical work",
+            "description": "Focus on strategy over execution",
+            "icon": "💰",
+            "effects": { "strategic": 3, "self": 1, "cognitive": -1 }
+          }
+        ]
+      },
+      {
+        "text": "You discover that your biggest competitor has just released a product that makes yours partially obsolete.",
+        "contexts": ["startup", "product company", "software firm", "manufacturing"],
+        "options": [
+          {
+            "label": "Rapidly pivot your offering",
+            "description": "Adapt quickly to new market reality",
+            "icon": "🔄",
+            "effects": { "adaptability": 3, "risk": 2, "strategic": 1 }
+          },
+          {
+            "label": "Double down on unique features",
+            "description": "Emphasize your differentiators",
+            "icon": "🎯",
+            "effects": { "strategic": 2, "motivation": 2, "dedication": 1 }
+          },
+          {
+            "label": "Form strategic partnership",
+            "description": "Collaborate instead of compete",
+            "icon": "🤝",
+            "effects": { "strategic": 3, "adaptability": 1, "ethics": 1 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "adaptability",
+    "category": "Adaptability / Disruption",
+    "templates": [
+      {
+        "text": "A major industry shift has made your current skills less relevant. New AI tools are automating much of your work.",
+        "contexts": ["design", "finance", "marketing", "operations"],
+        "options": [
+          {
+            "label": "Immediately start retraining",
+            "description": "Embrace new technology",
+            "icon": "🚀",
+            "effects": { "adaptability": 3, "cognitive": 2, "dedication": 1 }
+          },
+          {
+            "label": "Focus on human-centered skills",
+            "description": "Emphasize what AI can't do",
+            "icon": "💝",
+            "effects": { "adaptability": 1, "strategic": 2, "self": 1 }
+          },
+          {
+            "label": "Look for traditional industry",
+            "description": "Find less disrupted field",
+            "icon": "🏛️",
+            "effects": { "risk": -2, "adaptability": -1, "strategic": 1 }
+          }
+        ]
+      },
+      {
+        "text": "Your company is being acquired by a competitor with a completely different culture and methodology.",
+        "contexts": ["tech startup", "consulting firm", "creative agency", "manufacturing"],
+        "options": [
+          {
+            "label": "Embrace the new culture",
+            "description": "Lead integration efforts",
+            "icon": "🤗",
+            "effects": { "adaptability": 3, "motivation": 1, "strategic": 1 }
+          },
+          {
+            "label": "Preserve team traditions",
+            "description": "Fight for existing culture",
+            "icon": "🛡️",
+            "effects": { "ethics": 2, "dedication": 2, "adaptability": -1 }
+          },
+          {
+            "label": "Explore external opportunities",
+            "description": "Start job searching",
+            "icon": "🔍",
+            "effects": { "self": 2, "risk": 1, "adaptability": 1 }
+          }
+        ]
+      },
+      {
+        "text": "Your role has been restructured to include responsibilities in a completely different department you know nothing about.",
+        "contexts": ["corporate", "nonprofit", "government", "agency"],
+        "options": [
+          {
+            "label": "Dive into learning",
+            "description": "Master the new domain quickly",
+            "icon": "🏊",
+            "effects": { "adaptability": 3, "cognitive": 2, "motivation": 1 }
+          },
+          {
+            "label": "Find internal mentor",
+            "description": "Build relationships for guidance",
+            "icon": "🤝",
+            "effects": { "adaptability": 2, "strategic": 2, "cognitive": 1 }
+          },
+          {
+            "label": "Request role clarification",
+            "description": "Push back on scope creep",
+            "icon": "📋",
+            "effects": { "self": 2, "strategic": 1, "adaptability": -1 }
+          }
+        ]
+      },
+      {
+        "text": "A global pandemic forces your entirely in-person team to work remotely with no established processes.",
+        "contexts": ["traditional office", "manufacturing", "retail", "healthcare"],
+        "options": [
+          {
+            "label": "Create digital infrastructure",
+            "description": "Build remote-first systems",
+            "icon": "💻",
+            "effects": { "adaptability": 3, "cognitive": 2, "motivation": 1 }
+          },
+          {
+            "label": "Maintain personal connections",
+            "description": "Focus on team morale",
+            "icon": "❤️",
+            "effects": { "adaptability": 2, "ethics": 2, "strategic": 1 }
+          },
+          {
+            "label": "Push for hybrid model",
+            "description": "Advocate for flexible approach",
+            "icon": "⚖️",
+            "effects": { "adaptability": 1, "strategic": 2, "self": 1 }
+          }
+        ]
+      },
+      {
+        "text": "Your biggest client suddenly changes their requirements mid-project, wanting a completely different deliverable in the same timeframe.",
+        "contexts": ["consulting", "software development", "design agency", "construction"],
+        "options": [
+          {
+            "label": "Redesign approach rapidly",
+            "description": "Pivot to new requirements",
+            "icon": "🔄",
+            "effects": { "adaptability": 3, "cognitive": 1, "strategic": 1 }
+          },
+          {
+            "label": "Negotiate scope adjustment",
+            "description": "Manage expectations realistically",
+            "icon": "📊",
+            "effects": { "strategic": 3, "adaptability": 1, "ethics": 1 }
+          },
+          {
+            "label": "Deliver hybrid solution",
+            "description": "Blend old and new requirements",
+            "icon": "🔀",
+            "effects": { "adaptability": 2, "cognitive": 2, "risk": 1 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics",
+    "category": "Ethical Dilemma",
+    "templates": [
+      {
+        "text": "You discover your company is misleading customers about product safety data to meet quarterly revenue targets.",
+        "contexts": ["pharmaceutical", "automotive", "food", "tech"],
+        "options": [
+          {
+            "label": "Report to authorities",
+            "description": "Prioritize public safety",
+            "icon": "⚖️",
+            "effects": { "ethics": 3, "risk": 2, "self": -1 }
+          },
+          {
+            "label": "Raise concerns internally",
+            "description": "Try to change from within",
+            "icon": "💬",
+            "effects": { "ethics": 2, "strategic": 1, "dedication": 1 }
+          },
+          {
+            "label": "Document but stay quiet",
+            "description": "Protect your position",
+            "icon": "📝",
+            "effects": { "self": 2, "risk": -1, "ethics": -2 }
+          }
+        ]
+      },
+      {
+        "text": "Your manager asks you to inflate expense reports to cover department overspending, claiming 'everyone does it'.",
+        "contexts": ["corporate", "consulting", "nonprofit", "government"],
+        "options": [
+          {
+            "label": "Refuse and report",
+            "description": "Maintain financial integrity",
+            "icon": "🚫",
+            "effects": { "ethics": 3, "risk": 2, "self": -1 }
+          },
+          {
+            "label": "Suggest alternative solutions",
+            "description": "Find legitimate budget fixes",
+            "icon": "💡",
+            "effects": { "ethics": 2, "cognitive": 2, "strategic": 1 }
+          },
+          {
+            "label": "Comply reluctantly",
+            "description": "Go along to avoid conflict",
+            "icon": "😔",
+            "effects": { "self": 2, "ethics": -3, "risk": -1 }
+          }
+        ]
+      },
+      {
+        "text": "You witness a colleague taking credit for a junior employee's breakthrough idea in a high-stakes presentation.",
+        "contexts": ["research lab", "creative agency", "tech company", "consulting"],
+        "options": [
+          {
+            "label": "Interrupt and correct",
+            "description": "Speak up immediately",
+            "icon": "✋",
+            "effects": { "ethics": 3, "risk": 2, "motivation": 1 }
+          },
+          {
+            "label": "Address privately after",
+            "description": "Confront the colleague later",
+            "icon": "🤐",
+            "effects": { "ethics": 2, "strategic": 2, "cognitive": 1 }
+          },
+          {
+            "label": "Support junior privately",
+            "description": "Help behind the scenes",
+            "icon": "🤝",
+            "effects": { "ethics": 1, "self": 1, "strategic": 1 }
+          }
+        ]
+      },
+      {
+        "text": "Your company wins a contract by submitting false credentials and experience claims that you helped prepare.",
+        "contexts": ["construction", "consulting", "tech services", "healthcare"],
+        "options": [
+          {
+            "label": "Expose the fraud",
+            "description": "Report to client and authorities",
+            "icon": "📢",
+            "effects": { "ethics": 3, "risk": 3, "self": -2 }
+          },
+          {
+            "label": "Demand immediate correction",
+            "description": "Push for honest disclosure",
+            "icon": "🔧",
+            "effects": { "ethics": 2, "strategic": 1, "risk": 1 }
+          },
+          {
+            "label": "Start documenting everything",
+            "description": "Protect yourself legally",
+            "icon": "📋",
+            "effects": { "self": 2, "strategic": 2, "ethics": -1 }
+          }
+        ]
+      },
+      {
+        "text": "You learn that your AI recommendation system has racial bias, but fixing it would delay a major product launch.",
+        "contexts": ["tech company", "fintech", "healthcare tech", "HR platform"],
+        "options": [
+          {
+            "label": "Halt launch immediately",
+            "description": "Fix bias before release",
+            "icon": "🛑",
+            "effects": { "ethics": 3, "risk": 1, "strategic": -1 }
+          },
+          {
+            "label": "Launch with warnings",
+            "description": "Disclose limitations transparently",
+            "icon": "⚠️",
+            "effects": { "ethics": 1, "strategic": 2, "risk": 1 }
+          },
+          {
+            "label": "Launch as planned",
+            "description": "Fix in future update",
+            "icon": "🚀",
+            "effects": { "self": 2, "strategic": 1, "ethics": -3 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "strategic",
+    "category": "Strategic Opportunity",
+    "templates": [
+      {
+        "text": "A competitor offers you a senior role with 40% higher pay, but you'd have to sign a non-compete affecting your current passion project.",
+        "contexts": ["tech startup", "consulting", "creative agency", "biotech"],
+        "options": [
+          {
+            "label": "Accept the offer",
+            "description": "Prioritize financial growth",
+            "icon": "💰",
+            "effects": { "strategic": 2, "risk": 1, "self": 2, "dedication": -1 }
+          },
+          {
+            "label": "Negotiate terms",
+            "description": "Try to protect your project",
+            "icon": "🤝",
+            "effects": { "strategic": 3, "cognitive": 1, "ethics": 1 }
+          },
+          {
+            "label": "Decline and double down",
+            "description": "Commit fully to current path",
+            "icon": "🎯",
+            "effects": { "dedication": 3, "motivation": 1, "risk": -1 }
+          }
+        ]
+      },
+      {
+        "text": "Your startup has enough funding for either aggressive market expansion or building a superior product. Both paths are risky.",
+        "contexts": ["tech startup", "biotech", "fintech", "e-commerce"],
+        "options": [
+          {
+            "label": "Scale aggressively",
+            "description": "Capture market share quickly",
+            "icon": "📈",
+            "effects": { "strategic": 3, "risk": 2, "motivation": 1 }
+          },
+          {
+            "label": "Perfect the product",
+            "description": "Focus on quality and features",
+            "icon": "🔬",
+            "effects": { "strategic": 2, "cognitive": 2, "dedication": 1 }
+          },
+          {
+            "label": "Balanced approach",
+            "description": "Split resources between both",
+            "icon": "⚖️",
+            "effects": { "strategic": 1, "adaptability": 2, "risk": 1 }
+          }
+        ]
+      },
+      {
+        "text": "A major industry partnership could 10x your business, but requires sharing proprietary technology with potential future competitors.",
+        "contexts": ["tech company", "biotech", "manufacturing", "energy"],
+        "options": [
+          {
+            "label": "Form strategic alliance",
+            "description": "Share technology for growth",
+            "icon": "🤝",
+            "effects": { "strategic": 3, "risk": 2, "cognitive": 1 }
+          },
+          {
+            "label": "License selectively",
+            "description": "Maintain control while partnering",
+            "icon": "📜",
+            "effects": { "strategic": 2, "cognitive": 2, "self": 1 }
+          },
+          {
+            "label": "Go it alone",
+            "description": "Protect IP and grow organically",
+            "icon": "🏰",
+            "effects": { "strategic": 1, "self": 2, "risk": -1 }
+          }
+        ]
+      },
+      {
+        "text": "You can acquire a struggling competitor for cheap, gaining their talent and customer base, but inheriting their debt and culture problems.",
+        "contexts": ["consulting firm", "tech company", "retail chain", "manufacturing"],
+        "options": [
+          {
+            "label": "Acquire and restructure",
+            "description": "Buy and transform the company",
+            "icon": "🏗️",
+            "effects": { "strategic": 3, "risk": 2, "adaptability": 1 }
+          },
+          {
+            "label": "Hire key talent only",
+            "description": "Poach best people instead",
+            "icon": "🎯",
+            "effects": { "strategic": 2, "self": 1, "ethics": -1 }
+          },
+          {
+            "label": "Partner for projects",
+            "description": "Collaborate without acquisition",
+            "icon": "🤝",
+            "effects": { "strategic": 1, "risk": -1, "ethics": 1 }
+          }
+        ]
+      },
+      {
+        "text": "A government contract worth millions requires compromising your company's environmental standards to meet cost requirements.",
+        "contexts": ["construction", "manufacturing", "consulting", "technology"],
+        "options": [
+          {
+            "label": "Decline on principle",
+            "description": "Maintain environmental standards",
+            "icon": "🌱",
+            "effects": { "ethics": 3, "strategic": -1, "self": -1 }
+          },
+          {
+            "label": "Propose alternative solution",
+            "description": "Find cost-effective green approach",
+            "icon": "💡",
+            "effects": { "strategic": 3, "cognitive": 2, "ethics": 1 }
+          },
+          {
+            "label": "Accept with minimal compliance",
+            "description": "Meet legal minimums only",
+            "icon": "📊",
+            "effects": { "strategic": 2, "self": 2, "ethics": -2 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "interpersonal",
+    "category": "Interpersonal Conflict",
+    "templates": [
+      {
+        "text": "Your team member consistently takes credit for your ideas in meetings, undermining your contributions to important projects.",
+        "contexts": ["marketing team", "product team", "design team", "engineering team"],
+        "options": [
+          {
+            "label": "Address directly in private",
+            "description": "Have a one-on-one conversation",
+            "icon": "💬",
+            "effects": { "ethics": 2, "cognitive": 1, "risk": 1 }
+          },
+          {
+            "label": "Document and escalate",
+            "description": "Report to management with evidence",
+            "icon": "📋",
+            "effects": { "strategic": 2, "ethics": 1, "self": 1 }
+          },
+          {
+            "label": "Compete more assertively",
+            "description": "Speak up immediately in meetings",
+            "icon": "🗣️",
+            "effects": { "motivation": 2, "risk": 2, "adaptability": 1 }
+          }
+        ]
+      },
+      {
+        "text": "Two of your star employees are in a bitter personal conflict that's affecting team productivity and morale.",
+        "contexts": ["project team", "sales team", "research group", "operations"],
+        "options": [
+          {
+            "label": "Facilitate mediation session",
+            "description": "Help them resolve differences",
+            "icon": "🤝",
+            "effects": { "cognitive": 2, "ethics": 2, "strategic": 1 }
+          },
+          {
+            "label": "Separate their responsibilities",
+            "description": "Restructure to minimize interaction",
+            "icon": "🔀",
+            "effects": { "strategic": 3, "adaptability": 1, "self": 1 }
+          },
+          {
+            "label": "Issue ultimatum",
+            "description": "Demand they resolve it or leave",
+            "icon": "⚖️",
+            "effects": { "risk": 2, "motivation": 1, "ethics": -1 }
+          }
+        ]
+      },
+      {
+        "text": "Your mentor, who helped your career significantly, asks you to hire their underqualified relative for a key position.",
+        "contexts": ["startup", "consulting firm", "tech company", "nonprofit"],
+        "options": [
+          {
+            "label": "Politely decline",
+            "description": "Prioritize merit-based hiring",
+            "icon": "🚫",
+            "effects": { "ethics": 3, "risk": 1, "self": -1 }
+          },
+          {
+            "label": "Offer different role",
+            "description": "Find suitable alternative position",
+            "icon": "🔄",
+            "effects": { "strategic": 2, "cognitive": 2, "ethics": 1 }
+          },
+          {
+            "label": "Hire with probation",
+            "description": "Give them a chance with conditions",
+            "icon": "⏳",
+            "effects": { "self": 2, "adaptability": 1, "ethics": -1 }
+          }
+        ]
+      },
+      {
+        "text": "A toxic but high-performing team member is driving away other valuable employees with their behavior.",
+        "contexts": ["sales team", "engineering", "creative team", "operations"],
+        "options": [
+          {
+            "label": "Remove them immediately",
+            "description": "Prioritize team culture",
+            "icon": "🚪",
+            "effects": { "ethics": 3, "risk": 1, "strategic": -1 }
+          },
+          {
+            "label": "Intensive coaching program",
+            "description": "Invest in behavior change",
+            "icon": "🎯",
+            "effects": { "cognitive": 2, "dedication": 2, "strategic": 1 }
+          },
+          {
+            "label": "Isolate their impact",
+            "description": "Give them solo projects",
+            "icon": "🏝️",
+            "effects": { "strategic": 2, "adaptability": 1, "ethics": -1 }
+          }
+        ]
+      },
+      {
+        "text": "Your CEO publicly criticizes your department's work in front of clients, damaging team morale and external reputation.",
+        "contexts": ["corporate", "agency", "consulting", "startup"],
+        "options": [
+          {
+            "label": "Confront CEO privately",
+            "description": "Address the behavior directly",
+            "icon": "⚔️",
+            "effects": { "risk": 3, "motivation": 2, "ethics": 1 }
+          },
+          {
+            "label": "Rally team and clients",
+            "description": "Demonstrate value through actions",
+            "icon": "📊",
+            "effects": { "motivation": 2, "strategic": 2, "dedication": 1 }
+          },
+          {
+            "label": "Look for other opportunities",
+            "description": "Start planning exit strategy",
+            "icon": "🚪",
+            "effects": { "self": 3, "adaptability": 1, "dedication": -2 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "risk",
+    "category": "Risk / Financial Decision",
+    "templates": [
+      {
+        "text": "You have the chance to invest your savings into a promising startup founded by your former colleague, but it means giving up financial security for two years.",
+        "contexts": ["fintech", "cleantech", "edtech", "healthtech"],
+        "options": [
+          {
+            "label": "Invest everything",
+            "description": "Go all-in on the opportunity",
+            "icon": "🎲",
+            "effects": { "risk": 3, "motivation": 2, "strategic": -1 }
+          },
+          {
+            "label": "Invest partially",
+            "description": "Balanced risk approach",
+            "icon": "⚖️",
+            "effects": { "risk": 1, "strategic": 2, "cognitive": 1 }
+          },
+          {
+            "label": "Keep your savings safe",
+            "description": "Maintain financial stability",
+            "icon": "🛡️",
+            "effects": { "self": 2, "strategic": 1, "risk": -2 }
+          }
+        ]
+      },
+      {
+        "text": "Your company is struggling. You can either take a guaranteed job elsewhere or stay and accept equity instead of salary for six months.",
+        "contexts": ["startup", "consulting firm", "creative agency", "biotech"],
+        "options": [
+          {
+            "label": "Stay for equity",
+            "description": "Bet on company's future",
+            "icon": "💎",
+            "effects": { "risk": 3, "dedication": 2, "motivation": 1 }
+          },
+          {
+            "label": "Negotiate partial salary",
+            "description": "Balance risk and security",
+            "icon": "🤝",
+            "effects": { "strategic": 2, "risk": 1, "cognitive": 1 }
+          },
+          {
+            "label": "Take guaranteed job",
+            "description": "Prioritize financial security",
+            "icon": "🏦",
+            "effects": { "self": 2, "strategic": 1, "risk": -2 }
+          }
+        ]
+      },
+      {
+        "text": "A client offers to triple your fee if you can deliver an impossible deadline, but failure would damage your reputation permanently.",
+        "contexts": ["consulting", "design agency", "software development", "architecture"],
+        "options": [
+          {
+            "label": "Accept the challenge",
+            "description": "Risk reputation for reward",
+            "icon": "🚀",
+            "effects": { "risk": 3, "motivation": 2, "dedication": 1 }
+          },
+          {
+            "label": "Counter with realistic terms",
+            "description": "Negotiate achievable scope",
+            "icon": "📋",
+            "effects": { "strategic": 3, "cognitive": 1, "risk": 1 }
+          },
+          {
+            "label": "Decline professionally",
+            "description": "Protect reputation and relationships",
+            "icon": "🛡️",
+            "effects": { "strategic": 1, "ethics": 2, "risk": -2 }
+          }
+        ]
+      },
+      {
+        "text": "You can buy expensive equipment that might revolutionize your work, but it would drain your emergency fund completely.",
+        "contexts": ["creative studio", "medical practice", "manufacturing", "research lab"],
+        "options": [
+          {
+            "label": "Make the investment",
+            "description": "Bet on transformational upgrade",
+            "icon": "⚡",
+            "effects": { "risk": 3, "cognitive": 1, "motivation": 1 }
+          },
+          {
+            "label": "Lease instead of buy",
+            "description": "Reduce risk with rental option",
+            "icon": "📝",
+            "effects": { "strategic": 2, "risk": 1, "cognitive": 1 }
+          },
+          {
+            "label": "Wait for better timing",
+            "description": "Build savings first",
+            "icon": "⏰",
+            "effects": { "strategic": 2, "self": 1, "risk": -2 }
+          }
+        ]
+      },
+      {
+        "text": "A cryptocurrency investment opportunity promises 1000% returns but requires borrowing against your home equity.",
+        "contexts": ["personal finance", "side business", "investment", "speculation"],
+        "options": [
+          {
+            "label": "Take the leverage",
+            "description": "Risk home for potential fortune",
+            "icon": "🏠",
+            "effects": { "risk": 3, "motivation": 1, "strategic": -2 }
+          },
+          {
+            "label": "Invest smaller amount",
+            "description": "Use only disposable income",
+            "icon": "💰",
+            "effects": { "risk": 1, "strategic": 2, "self": 1 }
+          },
+          {
+            "label": "Avoid entirely",
+            "description": "Too risky for consideration",
+            "icon": "🚫",
+            "effects": { "strategic": 1, "self": 2, "risk": -3 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cognitive",
+    "category": "Cognitive Challenge / Learning",
+    "templates": [
+      {
+        "text": "New industry regulations require you to master complex compliance frameworks. You have three months before implementation.",
+        "contexts": ["financial services", "healthcare", "technology", "manufacturing"],
+        "options": [
+          {
+            "label": "Intensive self-study program",
+            "description": "Dedicate evenings and weekends",
+            "icon": "📚",
+            "effects": { "cognitive": 3, "dedication": 2, "self": -1 }
+          },
+          {
+            "label": "Hire external consultant",
+            "description": "Bring in expertise quickly",
+            "icon": "🤝",
+            "effects": { "strategic": 2, "risk": 1, "cognitive": 1 }
+          },
+          {
+            "label": "Delegate to junior staff",
+            "description": "Let others handle the learning",
+            "icon": "👥",
+            "effects": { "self": 2, "strategic": 1, "cognitive": -2 }
+          }
+        ]
+      },
+      {
+        "text": "Your industry is adopting blockchain technology. You need to understand it deeply or risk becoming obsolete.",
+        "contexts": ["finance", "supply chain", "healthcare", "real estate"],
+        "options": [
+          {
+            "label": "Deep-dive technical training",
+            "description": "Master the underlying technology",
+            "icon": "🔗",
+            "effects": { "cognitive": 3, "dedication": 2, "adaptability": 1 }
+          },
+          {
+            "label": "Focus on business applications",
+            "description": "Understand practical implementations",
+            "icon": "💼",
+            "effects": { "cognitive": 2, "strategic": 2, "adaptability": 1 }
+          },
+          {
+            "label": "Partner with experts",
+            "description": "Collaborate rather than learn",
+            "icon": "🤝",
+            "effects": { "strategic": 2, "self": 1, "cognitive": -1 }
+          }
+        ]
+      },
+      {
+        "text": "A critical system you depend on is being replaced with new software. Training is optional but the learning curve is steep.",
+        "contexts": ["corporate", "government", "healthcare", "education"],
+        "options": [
+          {
+            "label": "Master new system early",
+            "description": "Become the go-to expert",
+            "icon": "🎯",
+            "effects": { "cognitive": 3, "motivation": 2, "strategic": 1 }
+          },
+          {
+            "label": "Learn gradually with peers",
+            "description": "Take collaborative approach",
+            "icon": "👥",
+            "effects": { "cognitive": 2, "adaptability": 1, "ethics": 1 }
+          },
+          {
+            "label": "Stick with workarounds",
+            "description": "Avoid learning new system",
+            "icon": "🛤️",
+            "effects": { "self": 2, "adaptability": -2, "cognitive": -2 }
+          }
+        ]
+      },
+      {
+        "text": "Machine learning could revolutionize your field, but requires learning programming and statistics from scratch.",
+        "contexts": ["marketing", "research", "operations", "design"],
+        "options": [
+          {
+            "label": "Full technical education",
+            "description": "Learn programming and ML fundamentals",
+            "icon": "🤖",
+            "effects": { "cognitive": 3, "dedication": 3, "adaptability": 1 }
+          },
+          {
+            "label": "Learn ML tools and concepts",
+            "description": "Focus on practical applications",
+            "icon": "🛠️",
+            "effects": { "cognitive": 2, "adaptability": 2, "strategic": 1 }
+          },
+          {
+            "label": "Hire technical talent",
+            "description": "Build team rather than skills",
+            "icon": "👨‍💻",
+            "effects": { "strategic": 2, "self": 1, "cognitive": -1 }
+          }
+        ]
+      },
+      {
+        "text": "A new methodology promises to solve persistent problems in your field, but requires unlearning established practices.",
+        "contexts": ["healthcare", "education", "engineering", "management"],
+        "options": [
+          {
+            "label": "Embrace new methodology",
+            "description": "Completely adopt new approach",
+            "icon": "🔄",
+            "effects": { "cognitive": 3, "adaptability": 2, "risk": 1 }
+          },
+          {
+            "label": "Hybrid integration",
+            "description": "Blend old and new approaches",
+            "icon": "⚖️",
+            "effects": { "cognitive": 2, "strategic": 2, "adaptability": 1 }
+          },
+          {
+            "label": "Stick with proven methods",
+            "description": "Trust established practices",
+            "icon": "📚",
+            "effects": { "strategic": 1, "self": 1, "cognitive": -2 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "personal",
+    "category": "Personal Life Event",
+    "templates": [
+      {
+        "text": "Your parent falls seriously ill and needs long-term care just as you're being considered for a major promotion that requires extensive travel.",
+        "contexts": ["family crisis", "career opportunity", "healthcare decisions", "life balance"],
+        "options": [
+          {
+            "label": "Take family leave",
+            "description": "Prioritize family care completely",
+            "icon": "❤️",
+            "effects": { "ethics": 3, "self": -2, "dedication": 1 }
+          },
+          {
+            "label": "Negotiate remote work",
+            "description": "Balance career and care duties",
+            "icon": "💻",
+            "effects": { "adaptability": 2, "strategic": 2, "cognitive": 1 }
+          },
+          {
+            "label": "Pursue promotion fully",
+            "description": "Arrange alternative care",
+            "icon": "🎯",
+            "effects": { "motivation": 2, "strategic": 1, "self": 2, "ethics": -1 }
+          }
+        ]
+      },
+      {
+        "text": "Your spouse receives a dream job offer in another country, but you've just started building something important in your current location.",
+        "contexts": ["international move", "relationship", "career conflict", "life change"],
+        "options": [
+          {
+            "label": "Move and start over",
+            "description": "Support spouse's opportunity",
+            "icon": "✈️",
+            "effects": { "adaptability": 3, "self": -1, "risk": 2 }
+          },
+          {
+            "label": "Try long-distance temporarily",
+            "description": "Test remote relationship",
+            "icon": "📱",
+            "effects": { "strategic": 2, "adaptability": 1, "self": 1 }
+          },
+          {
+            "label": "Ask spouse to decline",
+            "description": "Prioritize your current path",
+            "icon": "🏠",
+            "effects": { "self": 3, "dedication": 1, "ethics": -2 }
+          }
+        ]
+      },
+      {
+        "text": "You're offered a chance to adopt a child, but it would require significant changes to your work-travel schedule.",
+        "contexts": ["family planning", "work-life balance", "adoption", "lifestyle change"],
+        "options": [
+          {
+            "label": "Adopt and restructure work",
+            "description": "Make family the priority",
+            "icon": "👶",
+            "effects": { "ethics": 2, "adaptability": 2, "self": -1 }
+          },
+          {
+            "label": "Delay until career stable",
+            "description": "Wait for better timing",
+            "icon": "⏰",
+            "effects": { "strategic": 2, "self": 1, "ethics": -1 }
+          },
+          {
+            "label": "Decline the opportunity",
+            "description": "Focus on career goals",
+            "icon": "💼",
+            "effects": { "self": 2, "motivation": 1, "ethics": -2 }
+          }
+        ]
+      },
+      {
+        "text": "A close friend asks you to be their business partner in a venture that could be amazing, but would strain your friendship if it fails.",
+        "contexts": ["friendship", "business partnership", "personal relationships", "risk"],
+        "options": [
+          {
+            "label": "Partner with clear boundaries",
+            "description": "Set professional expectations",
+            "icon": "📋",
+            "effects": { "strategic": 2, "cognitive": 2, "risk": 1 }
+          },
+          {
+            "label": "Decline to preserve friendship",
+            "description": "Keep business and friendship separate",
+            "icon": "🤝",
+            "effects": { "ethics": 2, "self": 1, "risk": -1 }
+          },
+          {
+            "label": "Suggest alternative arrangement",
+            "description": "Find different way to help",
+            "icon": "💡",
+            "effects": { "cognitive": 2, "adaptability": 1, "strategic": 1 }
+          }
+        ]
+      },
+      {
+        "text": "Your mental health has been struggling due to work stress, but taking time off would hurt your promotion chances.",
+        "contexts": ["mental health", "work pressure", "self-care", "career impact"],
+        "options": [
+          {
+            "label": "Take time for recovery",
+            "description": "Prioritize mental health completely",
+            "icon": "🧘",
+            "effects": { "self": 3, "ethics": 1, "motivation": -1 }
+          },
+          {
+            "label": "Seek therapy while working",
+            "description": "Address issues while maintaining career",
+            "icon": "💭",
+            "effects": { "strategic": 2, "cognitive": 1, "adaptability": 1 }
+          },
+          {
+            "label": "Push through for promotion",
+            "description": "Sacrifice wellness for advancement",
+            "icon": "💪",
+            "effects": { "motivation": 2, "dedication": 1, "self": -3 }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -72,7 +72,7 @@ export default function SetupContent({ aiTrained, selectedCultureModule, handleA
                                     />
                                     <div>
                                         <div className="font-medium text-sm">{module.name}</div>
-                                        <div className="text-xs text-[#4b5563]">{module.description}</div>
+                                        <div className="text-[0.75rem] text-[#4b5563]">{module.description}</div>
                                     </div>
                                 </label>
                             ))}
@@ -81,8 +81,8 @@ export default function SetupContent({ aiTrained, selectedCultureModule, handleA
                         {selectedCultureModule === 'custom' && !cultureLoaded && (
                             <div className="mt-4 border-2 border-dashed border-[#d1d5db] rounded-lg p-4 text-center">
                                 <Upload size={24} className="mx-auto mb-2 text-gray-400" />
-                                <p className="text-xs text-[#4b5563] mb-2">Carica documento valori aziendali</p>
-                                <label className="cursor-pointer bg-green-300 hover:bg-green-700 text-white py-1 px-3 rounded text-xs">
+                                <p className="text-[0.75rem] text-[#4b5563] mb-2">Carica documento valori aziendali</p>
+                                <label className="cursor-pointer bg-green-300 hover:bg-green-700 text-white py-1 px-3 rounded text-[0.75rem]">
                                     Carica Valori
                                     <input type="file" className="hidden" onChange={handleCultureLoad} accept=".pdf,.txt,.docx" />
                                 </label>
