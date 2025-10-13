@@ -5,7 +5,7 @@
     "description": "Create and scale a profitable company",
     "functional": true,
     "influence": ["motivation", "risk", "strategic"],
-    "image": "../../../../src/assets/goal-business.png"
+    "image": "/src/assets/goal-business.png"
   },
   {
     "id": "creative",
@@ -13,7 +13,7 @@
     "description": "Create notable work in arts & design",
     "functional": true,
     "influence": ["adaptability", "cognitive", "self"],
-    "image": "../../../../src/assets/goal-creative.png"
+    "image": "/src/assets/goal-creative.png"
   },
   {
     "id": "impact",
@@ -21,7 +21,7 @@
     "description": "Lead initiatives that change communities",
     "functional": true,
     "influence": ["ethics", "motivation", "dedication"],
-    "image": "../../../../src/assets/goal-impact.png"
+    "image": "/src/assets/goal-impact.png"
   },
   {
     "id": "freedom",
@@ -29,7 +29,7 @@
     "description": "Build financial independence and balance",
     "functional": true,
     "influence": ["strategic", "risk", "dedication"],
-    "image": "../../../../src/assets/goal-freedom.png"
+    "image": "/src/assets/goal-freedom.png"
   },
   {
     "id": "academic",
@@ -37,7 +37,7 @@
     "description": "Pursue high-level research or education",
     "functional": false,
     "mapTo": "creative",
-    "image": "../../../../src/assets/goal-academic.png"
+    "image": "/src/assets/goal-academic.png"
   },
   {
     "id": "family",
@@ -45,7 +45,7 @@
     "description": "Prioritize family & relationships",
     "functional": false,
     "mapTo": "freedom",
-    "image": "../../../../src/assets/goal-family.png"
+    "image": "/src/assets/goal-family.png"
   },
   {
     "id": "traveler",
@@ -53,7 +53,7 @@
     "description": "Explore the world & cultures",
     "functional": false,
     "mapTo": "creative",
-    "image": "../../../../src/assets/goal-traveler.png"
+    "image": "/src/assets/goal-traveler.png"
   },
   {
     "id": "public",
@@ -61,7 +61,7 @@
     "description": "Make policy-level impact",
     "functional": false,
     "mapTo": "impact",
-    "image": "../../../../src/assets/goal-public.png"
+    "image": "/src/assets/goal-public.png"
   },
   {
     "id": "health",
@@ -69,7 +69,7 @@
     "description": "Promote wellbeing and fitness",
     "functional": false,
     "mapTo": "business",
-    "image": "../../../../src/assets/goal-health.png"
+    "image": "/src/assets/goal-health.png"
   },
   {
     "id": "technical",
@@ -77,7 +77,7 @@
     "description": "Become a high-level technical expert",
     "functional": false,
     "mapTo": "freedom",
-    "image": "../../../../src/assets/goal-technical.png"
+    "image": "/src/assets/goal-technical.png"
   },
   {
     "id": "social",
@@ -85,7 +85,7 @@
     "description": "Build a personal brand online",
     "functional": false,
     "mapTo": "creative",
-    "image": "../../../../src/assets/goal-social.png"
+    "image": "/src/assets/goal-social.png"
   },
   {
     "id": "nonprofit",
@@ -93,7 +93,7 @@
     "description": "Serve communities through an NGO",
     "functional": false,
     "mapTo": "impact",
-    "image": "../../../../src/assets/goal-nonprofit.png"
+    "image": "/src/assets/goal-nonprofit.png"
   },
   {
     "id": "luxury",
@@ -101,7 +101,7 @@
     "description": "Attain a premium lifestyle",
     "functional": false,
     "mapTo": "freedom",
-    "image": "../../../../src/assets/goal-freedom.png"
+    "image": "/src/assets/goal-freedom.png"
   },
   {
     "id": "crafts",
@@ -109,7 +109,7 @@
     "description": "Create handmade works & small biz",
     "functional": false,
     "mapTo": "creative",
-    "image": "../../../../src/assets/goal-creative.png"
+    "image": "/src/assets/goal-creative.png"
   },
   {
     "id": "education",
@@ -117,6 +117,6 @@
     "description": "Teach & influence learning",
     "functional": false,
     "mapTo": "impact",
-    "image": "../../../../src/assets/goal-impact.png"
+    "image": "/src/assets/goal-impact.png"
   }
 ]
