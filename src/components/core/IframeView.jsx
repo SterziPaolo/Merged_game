@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import Loading from './Loading';
-import ContentHeader from "./Matcho/ContentHeader";
+import ContentHeader from "../common/ContentHeader";
 
 const STATIC_URL = [
     'https://monopoly-skills.lovable.app/',

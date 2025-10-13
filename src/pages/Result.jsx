@@ -2,7 +2,7 @@ import { ChevronDown } from 'lucide-react';
 
 import CandidateCard from '../components/core/Matcho/CandidateCard'
 import candidates from '../data/candidates.json'
-import ContentHeader from '../components/core/Matcho/ContentHeader';
+import ContentHeader from '../components/common/ContentHeader';
 
 const Result = () => {
     return (
@@ -10,12 +10,12 @@ const Result = () => {
             <ContentHeader />
             <div className="mb-6 mt-10 px-5 mx-auto">
                 <h2 className="text-lg font-semibold mb-2">Risultati Analisi AI</h2>
-                <p className="text-gray-600 mb-6">
+                <p className="text-[#4b5563] mb-6">
                     Analisi completa dei candidati con punteggi separati per Job Fit, Team Fit e valutazione finale.
                 </p>
 
                 <div>
-                    <div className="mb-6 bg-white rounded-lg border border-[#e5e7eb] border-gray-200 p-4">
+                    <div className="mb-6 bg-white rounded-lg border border-[#e5e7eb] border-[#e5e7eb] p-4">
                         <div className="flex items-center justify-between">
                             <div>
                                 <h3 className="font-medium">Analisi completata per {candidates.length} candidati</h3>

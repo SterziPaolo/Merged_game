@@ -8,7 +8,10 @@ export default function MainView({ fullScreen }) {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (currSel === 2) {
+        if (currSel === 1) {
+            navigate("/monopolygame");
+        }
+        else if (currSel === 2) {
             navigate("/matcho");
         }
         else if (currSel === 3) {

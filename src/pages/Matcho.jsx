@@ -5,7 +5,7 @@ import TabBar from '../components/core/Matcho/TabBar';
 import SetupContent from '../components/core/Matcho/SetupContent';
 import ProfileContent from '../components/core/Matcho/ProfileContent';
 import CandidateContent from '../components/core/Matcho/CandidateContent';
-import ContentHeader from '../components/core/Matcho/ContentHeader';
+import ContentHeader from '../components/common/ContentHeader';
 
 const Matcho = () => {
     const [activeTab, setActiveTab] = useState('setup');
@@ -47,7 +47,7 @@ const Matcho = () => {
         // setActiveTab('analisi');
     };
     return (
-        <div className="min-h-screen w-full bg-[#f9fafb] text-gray-800 flex flex-col">
+        <div className="min-h-screen w-full bg-[#f9fafb] text-[#1f2937] flex flex-col">
             {/* Header */}
             <ContentHeader />
 

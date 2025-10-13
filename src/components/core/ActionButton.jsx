@@ -7,7 +7,7 @@ const ActionButton = ({ onHandleAction }) => {
             <button
                 className='
                     px-[12px] py-[8px] rounded-[12px] font-bold bg-green-200 text-white border-green-50
-                    hover:bg-green-100 hover:text-white active:bg-green-500'
+                    hover:bg-green-100 hover:text-white active:bg-[#22c55e]'
                 onClick={() => onHandleAction('next')}
             >
                 <span className='flex gap-x-2 items-center px-3'>Next<AiOutlineArrowRight /></span>
