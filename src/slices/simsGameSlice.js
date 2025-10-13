@@ -19,7 +19,7 @@ const initialState = {
         },
         decisions: [],
         currentAge: 18,
-        timestamp: Date.now()
+        timestamp: new Date().toISOString(),
     }
 }
 
