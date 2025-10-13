@@ -1,12 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import GoalSelection from './GoalSelection';
 import CompanyInput from './CompanyInput';
 import DecisionMaking from './DecisionMaking';
 import Report from './Report';
+import { setSimsGameState } from '../../../slices/simsGameSlice'
 
 const SimsGame = () => {
   const [phase, setPhase] = useState('goals');
-  const [candidateState, setCandidateState] = useState(null);
+  const { candidateState } = useSelector((state) => state.simsGame);
+  const [candidateStates, setCandidateState] = useState(candidateState);
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(setSimsGameState(candidateStates))
+  }, [candidateStates])
 
   const handleGoalSelected = (selectedGoal, mappedGoal) => {
     const initialState = {
@@ -27,15 +37,15 @@ const SimsGame = () => {
       currentAge: 18,
       timestamp: new Date()
     };
-    
+
     setCandidateState(initialState);
     setPhase('company');
   };
 
   const handleCompanyComplete = (description, requirements) => {
-    if (candidateState) {
+    if (candidateStates) {
       setCandidateState({
-        ...candidateState,
+        ...candidateStates,
         companyDescription: description,
         jobRequirements: requirements
       });
@@ -48,12 +58,12 @@ const SimsGame = () => {
   };
 
   const handleDecisionMade = (decision, newTraits) => {
-    if (candidateState) {
+    if (candidateStates) {
       const updatedState = {
-        ...candidateState,
+        ...candidateStates,
         traits: newTraits,
-        decisions: [...candidateState.decisions, decision],
-        currentAge: candidateState.currentAge + 1
+        decisions: [...candidateStates.decisions, decision],
+        currentAge: candidateStates.currentAge + 1
       };
       setCandidateState(updatedState);
     }
@@ -74,27 +84,26 @@ const SimsGame = () => {
 
   if (phase === 'company') {
     return (
-      <CompanyInput 
+      <CompanyInput
         onComplete={handleCompanyComplete}
         onSkip={handleCompanySkip}
       />
     );
   }
 
-  if (phase === 'decisions' && candidateState) {
+  if (phase === 'decisions' && candidateStates) {
     return (
       <DecisionMaking
-        candidateState={candidateState}
+        candidateState={candidateStates}
         onDecisionMade={handleDecisionMade}
         onSimulationComplete={handleSimulationComplete}
       />
     );
   }
 
-  if (phase === 'report' && candidateState) {
+  if (phase === 'report' && candidateStates) {
     return (
-      <Report 
-        candidateState={candidateState}
+      <Report
         onRestart={handleRestart}
       />
     );

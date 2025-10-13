@@ -18,9 +18,9 @@ function App() {
       <Routes>
         <Route element={<MainView fullScreen={allowFullScreen} />}>
           <Route path='/matcho' element={<Matcho />} />
-          <Route path='/result' element={<Result />} />
           <Route path='/monopolygame' element={<MonopolyGame />} />
           <Route path='/lifetrack' element={<LifeTrack />} />
+          <Route path='/result' element={<Result />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Route>

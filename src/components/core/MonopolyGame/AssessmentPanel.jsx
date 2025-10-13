@@ -1,21 +1,24 @@
 
 import React from 'react';
+import { useSelector } from 'react-redux';
+
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Progress } from './ui/progress';
 
-const AssessmentPanel = ({ gameState, gameLog }) => {
+const AssessmentPanel = () => {
+  const { gameState } = useSelector((state) => state.monolopyGame)
   const player = gameState.players[0];
   const assessment = gameState.assessmentData;
 
   const getOverallScore = () => {
-    const total = assessment.riskTaking + assessment.strategicThinking + 
-                 assessment.resourceManagement + assessment.decisionSpeed;
+    const total = assessment.riskTaking + assessment.strategicThinking +
+      assessment.resourceManagement + assessment.decisionSpeed;
     return Math.max(0, Math.min(100, (total + 20) * 2));
   };
 
-    const getScoreLevel = (score) => {
+  const getScoreLevel = (score) => {
     if (score >= 80) return { label: 'Eccellente', color: 'bg-[#22c55e]', description: 'Competenze manageriali di alto livello' };
     if (score >= 60) return { label: 'Buono', color: 'bg-[#3b82f6]', description: 'Solide competenze con margini di crescita' };
     if (score >= 40) return { label: 'Sufficiente', color: 'bg-[#eab308]', description: 'Competenze di base, necessario sviluppo' };
@@ -58,7 +61,7 @@ const AssessmentPanel = ({ gameState, gameLog }) => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen my-10 pt-10">
       <div className="max-w-4xl mx-auto space-y-6">
         {/* Header del risultato */}
         <Card>
@@ -175,7 +178,7 @@ const AssessmentPanel = ({ gameState, gameLog }) => {
                   {assessment.decisionSpeed >= 2 && <li>Rapidità e sicurezza nel processo decisionale</li>}
                 </ul>
               </div>
-              
+
               <div>
                 <h4 className="font-bold mb-2">Aree di Miglioramento:</h4>
                 <ul className="list-disc pl-5 space-y-1 text-sm">
@@ -189,7 +192,7 @@ const AssessmentPanel = ({ gameState, gameLog }) => {
               <div>
                 <h4 className="font-bold mb-2">Raccomandazioni:</h4>
                 <p className="text-sm text-gray-700">
-                  Basandosi sui risultati, si consiglia di focalizzarsi su training specifici per le aree 
+                  Basandosi sui risultati, si consiglia di focalizzarsi su training specifici per le aree
                   con punteggio più basso e di valorizzare i punti di forza emersi in contesti lavorativi appropriati.
                 </p>
               </div>
