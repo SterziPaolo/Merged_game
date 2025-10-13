@@ -10,7 +10,11 @@ import './index.css'
 import rootReducer from './reducer/index';
 
 const store = configureStore({
-  reducer: rootReducer
+  reducer: rootReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });
 
 ReactDOM.createRoot(document.getElementById('root')).render(

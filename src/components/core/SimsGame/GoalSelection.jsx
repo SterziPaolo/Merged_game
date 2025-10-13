@@ -25,7 +25,6 @@ export default function GoalSelection({ onGoalSelected }) {
       setShowMappingDialog(true);
     }
   };
-  console.log(goals);
 
   const handleMappingConfirm = (mappedGoal) => {
     if (selectedGoal) {
