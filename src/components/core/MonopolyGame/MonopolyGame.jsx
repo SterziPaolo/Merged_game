@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
@@ -7,6 +9,7 @@ import { gameProperties, chanceCards, assessmentQuestions } from '../../../data/
 import GameBoard from './GameBoard';
 import PlayerPanel from './PlayerPanel';
 import AssessmentPanel from './AssessmentPanel';
+import { setMonolopyGameState } from '../../../slices/monolopyGameSlice';
 
 const MonopolyGame = () => {
   const [gameState, setGameState] = useState({
@@ -25,6 +28,12 @@ const MonopolyGame = () => {
       decisionSpeed: 0
     }
   });
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(setMonolopyGameState(gameState))
+  }, [gameState])
 
   const [diceResult, setDiceResult] = useState(0);
   const [currentDecision, setCurrentDecision] = useState(null);

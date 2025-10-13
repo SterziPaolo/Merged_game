@@ -1,3 +1,5 @@
+import { useSelector } from 'react-redux';
+
 import { Card } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
@@ -8,7 +10,7 @@ import { toast } from '../../../hooks/use-toast';
 const TRAIT_NAMES = {
   motivation: 'Motivation',
   dedication: 'Dedication',
-  adaptability: 'Adaptability', 
+  adaptability: 'Adaptability',
   ethics: 'Ethics',
   risk: 'Risk Taking',
   strategic: 'Strategic Thinking',
@@ -16,10 +18,13 @@ const TRAIT_NAMES = {
   self: 'Self Interest'
 };
 
-export default function Report({ candidateState, onRestart }) {
+export default function Report({ onRestart = null }) {
+
+  const { candidateState } = useSelector((state) => state.simsGame)
+
   // Calculate normalized scores
   const normalizedScores = {};
-  Object.entries(candidateState.traits).forEach(([trait, value]) => {
+  Object.entries(candidateState.traits) && Object.entries(candidateState.traits).forEach(([trait, value]) => {
     const clampedValue = Math.max(-30, Math.min(30, value));
     normalizedScores[trait] = Math.round(((clampedValue + 30) / 60) * 100);
   });
@@ -29,21 +34,21 @@ export default function Report({ candidateState, onRestart }) {
   const alignmentSum = goalTraits.reduce((sum, trait) => sum + (normalizedScores[trait] || 0), 0);
   const maxPossible = goalTraits.length * 100;
   const alignmentScore = Math.round((alignmentSum / maxPossible) * 100);
-  
+
   const alignmentLevel = alignmentScore >= 75 ? 'strong' : alignmentScore >= 50 ? 'moderate' : 'low';
   const alignmentColors = {
     strong: 'text-success',
-    moderate: 'text-[#f59f0a]', 
+    moderate: 'text-[#f59f0a]',
     low: 'text-destructive'
   };
 
   // Generate persona summary
   const topTraits = Object.entries(normalizedScores)
-    .sort(([,a], [,b]) => b - a)
+    .sort(([, a], [, b]) => b - a)
     .slice(0, 3)
     .map(([trait, _]) => TRAIT_NAMES[trait]);
-  
-  const personaSummary = `You demonstrate strong ${topTraits[0].toLowerCase()} with notable ${topTraits[1].toLowerCase()} and ${topTraits[2].toLowerCase()}. Your decision patterns suggest a ${alignmentLevel} alignment with your chosen goal of ${candidateState.selectedGoal.title.toLowerCase()}.`;
+
+  const personaSummary = `You demonstrate strong ${topTraits[0].toLowerCase()} with notable ${topTraits[1].toLowerCase()} and ${topTraits[2].toLowerCase()}. Your decision patterns suggest a ${alignmentLevel} alignment with your chosen goal of ${candidateState.selectedGoal.title && candidateState.selectedGoal.title.toLowerCase()}.`;
 
   // Behavioral flags
   const behavioralFlags = [];
@@ -100,10 +105,10 @@ ${personaSummary}
 
 PSYCHOLOGICAL PROFILE
 ${Object.entries(normalizedScores).map(([trait, score]) => {
-  const barLength = Math.round(score / 5);
-  const bar = '█'.repeat(barLength) + '░'.repeat(20 - barLength);
-  return `${TRAIT_NAMES[trait].padEnd(20)} │${bar}│ ${score}/100`;
-}).join('\n')}
+      const barLength = Math.round(score / 5);
+      const bar = '█'.repeat(barLength) + '░'.repeat(20 - barLength);
+      return `${TRAIT_NAMES[trait].padEnd(20)} │${bar}│ ${score}/100`;
+    }).join('\n')}
 
 GOAL ALIGNMENT ANALYSIS
 ├─ Alignment Score: ${alignmentScore}/100
@@ -111,9 +116,9 @@ GOAL ALIGNMENT ANALYSIS
 └─ Key Traits: ${goalTraits.map(t => TRAIT_NAMES[t]).join(', ')}
 
 DECISION HISTORY
-${candidateState.decisions.map((d, i) => 
-  `${(i + 1).toString().padStart(2, '0')}. Age ${d.age} │ ${d.category.toUpperCase()}\n    ${d.scenario.substring(0, 120)}${d.scenario.length > 120 ? '...' : ''}\n    ► ${d.selectedOption !== undefined ? d.options[d.selectedOption]?.label : 'No selection'}\n`
-).join('\n')}
+${candidateState.decisions.map((d, i) =>
+      `${(i + 1).toString().padStart(2, '0')}. Age ${d.age} │ ${d.category.toUpperCase()}\n    ${d.scenario.substring(0, 120)}${d.scenario.length > 120 ? '...' : ''}\n    ► ${d.selectedOption !== undefined ? d.options[d.selectedOption]?.label : 'No selection'}\n`
+    ).join('\n')}
 
 BEHAVIORAL INDICATORS
 ${behavioralFlags.length > 0 ? behavioralFlags.map(flag => `• ${flag}`).join('\n') : '• No significant behavioral flags identified'}
@@ -133,15 +138,15 @@ For questions about this assessment, contact your HR representative.
     URL.revokeObjectURL(url);
 
     toast({
-      title: "Report Downloaded", 
+      title: "Report Downloaded",
       description: "Detailed assessment report saved successfully"
     });
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-muted/30 p-6">
+    <div className="min-h-screen bg-gradient-to-br from-background to-muted/30 p-10 mt-10">
       <div className="max-w-6xl mx-auto space-y-8">
-        
+
         {/* Header */}
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#4a4fde] to-[#3abff8] bg-clip-text text-transparent">
@@ -156,7 +161,7 @@ For questions about this assessment, contact your HR representative.
         <Card className="p-8 border border-[#e5e7eb]">
           <h2 className="text-2xl font-bold mb-4">Executive Summary</h2>
           <p className="text-lg leading-relaxed mb-6">{personaSummary}</p>
-          
+
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h3 className="font-semibold mb-2">Selected Goal</h3>
@@ -191,7 +196,7 @@ For questions about this assessment, contact your HR representative.
               </div>
             ))}
           </div>
-          
+
           {behavioralFlags.length > 0 && (
             <div className="mt-6 p-4 bg-muted/50 rounded-lg">
               <h3 className="font-semibold mb-2">Behavioral Indicators</h3>
