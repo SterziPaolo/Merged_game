@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit"
 
+import { goals } from '../data/goals';
+
 const initialState = {
     candidateState: {
         sessionId: `ls-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-        selectedGoal: true,
+        selectedGoal: goals[0],
         mappedGoal: [],
         traits: {
             motivation: 0,
