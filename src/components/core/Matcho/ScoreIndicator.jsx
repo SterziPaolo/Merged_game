@@ -12,7 +12,7 @@ export default function ScoreIndicator({ score, label }) {
             style={{ width: `${score}%`, backgroundColor: color }}
           ></div>
         </div>
-        <div className="text-xs text-[#4b5563]">{label}</div>
+        <div className="text-[0.75rem] text-[#4b5563]">{label}</div>
       </div>
     );
   };

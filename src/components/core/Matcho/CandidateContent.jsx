@@ -40,7 +40,7 @@ export default function CandidateContent({ uploadedCandidates, handleAddCandidat
                                     <div className="flex items-center">
                                         <FileText size={18} className="mr-2 text-[#4b5563]" />
                                         <span>{candidate}</span>
-                                        <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-1 rounded">
+                                        <span className="ml-2 text-[0.75rem] bg-green-100 text-green-600 px-2 py-1 rounded">
                                             Analisi AI completata
                                         </span>
                                     </div>

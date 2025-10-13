@@ -117,7 +117,7 @@ const AssessmentPanel = ({ gameState, gameLog }) => {
                     <span className="text-sm font-bold">{assessment.riskTaking > 0 ? '+' : ''}{assessment.riskTaking}</span>
                   </div>
                   <Progress value={Math.max(0, Math.min(100, (assessment.riskTaking + 10) * 5))} className="h-2" />
-                  <p className="text-xs text-[#4b5563] mt-1">
+                  <p className="text-[0.75rem] text-[#4b5563] mt-1">
                     {getSkillFeedback('riskTaking', assessment.riskTaking)}
                   </p>
                 </div>
@@ -128,7 +128,7 @@ const AssessmentPanel = ({ gameState, gameLog }) => {
                     <span className="text-sm font-bold">{assessment.strategicThinking > 0 ? '+' : ''}{assessment.strategicThinking}</span>
                   </div>
                   <Progress value={Math.max(0, Math.min(100, (assessment.strategicThinking + 10) * 5))} className="h-2" />
-                  <p className="text-xs text-[#4b5563] mt-1">
+                  <p className="text-[0.75rem] text-[#4b5563] mt-1">
                     {getSkillFeedback('strategicThinking', assessment.strategicThinking)}
                   </p>
                 </div>
@@ -139,7 +139,7 @@ const AssessmentPanel = ({ gameState, gameLog }) => {
                     <span className="text-sm font-bold">{assessment.resourceManagement > 0 ? '+' : ''}{assessment.resourceManagement}</span>
                   </div>
                   <Progress value={Math.max(0, Math.min(100, (assessment.resourceManagement + 10) * 5))} className="h-2" />
-                  <p className="text-xs text-[#4b5563] mt-1">
+                  <p className="text-[0.75rem] text-[#4b5563] mt-1">
                     {getSkillFeedback('resourceManagement', assessment.resourceManagement)}
                   </p>
                 </div>
@@ -150,7 +150,7 @@ const AssessmentPanel = ({ gameState, gameLog }) => {
                     <span className="text-sm font-bold">{assessment.decisionSpeed > 0 ? '+' : ''}{assessment.decisionSpeed}</span>
                   </div>
                   <Progress value={Math.max(0, Math.min(100, (assessment.decisionSpeed + 10) * 5))} className="h-2" />
-                  <p className="text-xs text-[#4b5563] mt-1">
+                  <p className="text-[0.75rem] text-[#4b5563] mt-1">
                     {getSkillFeedback('decisionSpeed', assessment.decisionSpeed)}
                   </p>
                 </div>

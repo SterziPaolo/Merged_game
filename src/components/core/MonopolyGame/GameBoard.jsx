@@ -59,20 +59,20 @@ const GameBoard = ({
                 } ${getPropertyColor(property.color)}`}
               >
                 <div className="text-center">
-                  <div className={`text-xs font-bold ${
+                  <div className={`text-[0.75rem] font-bold ${
                     property.color === 'special' ? 'text-[#1f2937]' : 'text-white'
                   }`}>
                     {property.name}
                   </div>
                   {property.price > 0 && (
-                    <div className={`text-xs ${
+                    <div className={`text-[0.75rem] ${
                       property.color === 'special' ? 'text-[#4b5563]' : 'text-white'
                     }`}>
                       €{property.price}
                     </div>
                   )}
                   {property.owner && (
-                    <Badge className="mt-1 text-xs bg-[#eab308]">
+                    <Badge className="mt-1 text-[0.75rem] bg-[#eab308]">
                       Posseduta
                     </Badge>
                   )}

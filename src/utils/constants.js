@@ -9,3 +9,10 @@ export const TEXT_INFORMATION = [
     "Le tue scelte verranno analizzate per misurare: risk taking, pensiero strategico, gestione risorse, velocità decisionale.",
     "Scegli i tuoi obiettivi, affronta decisioni lavorative realistiche e scopri come le tue scelte plasmano il tuo profilo professionale. Al termine ricevi un'analisi personalizzata delle tue competenze e attitudini.",
 ]
+
+export const STATIC_NAVIGATE_TO = [
+    '/monopolygame',
+    '/matcho',
+    '/lifetrack',
+    '/result'
+]

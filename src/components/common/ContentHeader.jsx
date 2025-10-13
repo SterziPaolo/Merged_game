@@ -14,7 +14,7 @@ export default function ContentHeader() {
                     </svg>
                 </div>
                 <h1 className="text-xl font-semibold">Artemis</h1>
-                <div className="ml-4 px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">
+                <div className="ml-4 px-2 py-1 bg-green-100 text-green-700 text-[0.75rem] rounded-full">
                     AI-Powered Hiring
                 </div>
             </div>

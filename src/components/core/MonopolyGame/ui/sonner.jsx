@@ -12,11 +12,11 @@ const Toaster = ({ ...props }) => {
         classNames: {
           toast:
             "group toast group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg",
-          description: "group-[.toast]:text-muted-foreground",
+          description: "group-[.toast]:text-[#6b7280]",
           actionButton:
             "group-[.toast]:bg-[#0f172a] group-[.toast]:text-[#f8fafc]",
           cancelButton:
-            "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
+            "group-[.toast]:bg-muted group-[.toast]:text-[#6b7280]",
         },
       }}
       {...props}
