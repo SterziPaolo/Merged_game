@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-import logo from '../assets/logo.png'
+import { logo } from '../assets/images'
 import FullScreenActionButton from '../components/common/FullScreenActionButton';
 
 const MARK_TEXT = "Eteon";
 
-export default function Header({onHandleFullScreenMode}) {
+export default function Header({ onHandleFullScreenMode }) {
     const [isVisible, setIsVisible] = useState(false);
 
     const onHandleChange = () => {
@@ -15,7 +15,7 @@ export default function Header({onHandleFullScreenMode}) {
 
     return (
         <>
-            {!isVisible ? 
+            {!isVisible ?
                 <div className={`bg-green-100 w-full h-[80px] flex justify-between items-center px-10 transition-opacity duration-1000 ${!isVisible ? 'opacity-100' : 'opacity-0'}`}>
                     <div className='flex flex-start items-center gap-x-6'>
                         <img
@@ -26,8 +26,8 @@ export default function Header({onHandleFullScreenMode}) {
                     </div>
 
                     <FullScreenActionButton onToggleAction={onHandleChange} fullScreen={isVisible} />
-                </div> 
-                : 
+                </div>
+                :
                 <FullScreenActionButton onToggleAction={onHandleChange} fullScreen={isVisible} />
             }
         </>

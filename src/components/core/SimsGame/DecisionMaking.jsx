@@ -6,23 +6,24 @@ import { Progress } from './ui/progress';
 import { Badge } from './ui/badge';
 import { toast } from '../../../hooks/use-toast';
 
-// Import vignette images
-import stepUpLeader from '../../../assets/vignettes/step-up-leader.png';
-import negotiateTimeline from '../../../assets/vignettes/negotiate-timeline.png';
-import collaborateTeam from '../../../assets/vignettes/collaborate-team.png';
-import presentBoldly from '../../../assets/vignettes/present-boldly.png';
-import carefulApproach from '../../../assets/vignettes/careful-approach.png';
-import learnDevelop from '../../../assets/vignettes/learn-develop.png';
-import ethicalChoice from '../../../assets/vignettes/ethical-choice.png';
-import financialDecision from '../../../assets/vignettes/financial-decision.png';
-import strategicThinking from '../../../assets/vignettes/strategic-thinking.png';
-import networking from '../../../assets/vignettes/networking.png';
-import calculatedRisk from '../../../assets/vignettes/calculated-risk.png';
-import selfCare from '../../../assets/vignettes/self-care.png';
-import teamMeeting from '../../../assets/vignettes/team-meeting.png';
-import deadlinePressure from '../../../assets/vignettes/deadline-pressure.png';
-import careerChoice from '../../../assets/vignettes/career-choice.png';
-import workBalance from '../../../assets/vignettes/work-balance.png';
+import {
+  calculatedRisk,
+  careerChoice,
+  carefulApproach,
+  collaborateTeam,
+  deadlinePressure,
+  ethicalChoice,
+  financialDecision,
+  learnDevelop,
+  negotiateTimeline,
+  networking,
+  presentBoldly,
+  selfCare,
+  stepUpLeader,
+  strategicThinking,
+  teamMeeting,
+  workBalance,
+} from '../../../assets/images'
 
 const TRAIT_NAMES = {
   motivation: 'Motivation',

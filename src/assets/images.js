@@ -1,35 +1,35 @@
-import decisionIcon from './decision-icons.png';
-import goalAcademic from './goal-academic.png';
-import goalBusiness from './goal-business.png';
-import goalCreative from './goal-creative.png';
-import goalFamily from './goal-family.png';
-import goalFreedom from './goal-freedom.png';
-import goalHealth from './goal-health.png';
-import goalImpact from './goal-impact.png';
-import goalNonprofit from './goal-nonprofit.png';
-import goalPublic from './goal-public.png';
-import goalSocial from './goal-social.png';
-import goalTechnical from './goal-technical.png';
-import goalTraveler from './goal-traveler.png';
-import logo from './logo.png';
-import mono from './mono.png';
-import settings from './settings.png';
-import CalculatedRisk from './vignettes/calculated-risk.png';
-import CareerChoice from './vignettes/career-choice.png';
-import CarefulApproach from './vignettes/careful-approach.png';
-import CollaborateTeam from './vignettes/collaborate-team.png';
-import DeadlinePressure from './vignettes/deadline-pressure.png';
-import EthicalChoice from './vignettes/ethical-choice.png';
-import FinancialDecision from './vignettes/financial-decision.png';
-import LearnDevelop from './vignettes/learn-develop.png';
-import NegotiateTimeline from './vignettes/negotiate-timeline.png';
-import Networking from './vignettes/networking.png';
-import PresentBoldly from './vignettes/present-boldly.png';
-import SelfCare from './vignettes/self-care.png';
-import StepUpLeader from './vignettes/step-up-leader.png';
-import StrategicThinking from './vignettes/strategic-thinking.png';
-import TeamMeeting from './vignettes/team-meeting.png';
-import WorkBalance from './vignettes/work-balance.png';
+import decisionIcon from '/assets/images/decision-icons.png';
+import goalAcademic from '/assets/images/goal-academic.png';
+import goalBusiness from '/assets/images/goal-business.png';
+import goalCreative from '/assets/images/goal-creative.png';
+import goalFamily from '/assets/images/goal-family.png';
+import goalFreedom from '/assets/images/goal-freedom.png';
+import goalHealth from '/assets/images/goal-health.png';
+import goalImpact from '/assets/images/goal-impact.png';
+import goalNonprofit from '/assets/images/goal-nonprofit.png';
+import goalPublic from '/assets/images/goal-public.png';
+import goalSocial from '/assets/images/goal-social.png';
+import goalTechnical from '/assets/images/goal-technical.png';
+import goalTraveler from '/assets/images/goal-traveler.png';
+import logo from '/assets/images/logo.png';
+import mono from '/assets/images/mono.png';
+import settings from '/assets/images/settings.png';
+import calculatedRisk from '/assets/images/vignettes/calculated-risk.png';
+import careerChoice from '/assets/images/vignettes/career-choice.png';
+import carefulApproach from '/assets/images/vignettes/careful-approach.png';
+import collaborateTeam from '/assets/images/vignettes/collaborate-team.png';
+import deadlinePressure from '/assets/images/vignettes/deadline-pressure.png';
+import ethicalChoice from '/assets/images/vignettes/ethical-choice.png';
+import financialDecision from '/assets/images/vignettes/financial-decision.png';
+import learnDevelop from '/assets/images/vignettes/learn-develop.png';
+import negotiateTimeline from '/assets/images/vignettes/negotiate-timeline.png';
+import networking from '/assets/images/vignettes/networking.png';
+import presentBoldly from '/assets/images/vignettes/present-boldly.png';
+import selfCare from '/assets/images/vignettes/self-care.png';
+import stepUpLeader from '/assets/images/vignettes/step-up-leader.png';
+import strategicThinking from '/assets/images/vignettes/strategic-thinking.png';
+import teamMeeting from '/assets/images/vignettes/team-meeting.png';
+import workBalance from '/assets/images/vignettes/work-balance.png';
 
 export {
   decisionIcon,
@@ -48,20 +48,20 @@ export {
   logo,
   mono,
   settings,
-  CalculatedRisk,
-  CareerChoice,
-  CarefulApproach,
-  CollaborateTeam,
-  DeadlinePressure,
-  EthicalChoice,
-  FinancialDecision,
-  LearnDevelop,
-  NegotiateTimeline,
-  Networking,
-  PresentBoldly,
-  SelfCare,
-  StepUpLeader,
-  StrategicThinking,
-  TeamMeeting,
-  WorkBalance,
+  calculatedRisk,
+  careerChoice,
+  carefulApproach,
+  collaborateTeam,
+  deadlinePressure,
+  ethicalChoice,
+  financialDecision,
+  learnDevelop,
+  negotiateTimeline,
+  networking,
+  presentBoldly,
+  selfCare,
+  stepUpLeader,
+  strategicThinking,
+  teamMeeting,
+  workBalance,
 };
