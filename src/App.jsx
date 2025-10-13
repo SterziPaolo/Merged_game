@@ -7,6 +7,7 @@ import Matcho from './pages/Matcho'
 import Result from './pages/Result'
 import IframeView from './components/core/IframeView.jsx'
 import PageNotFound from './pages/PageNotFound.jsx';
+import MonopolyGame from './pages/MonopolyGame';
 
 function App() {
   const [allowFullScreen, setAllowFullScreen] = useState(false)
@@ -18,6 +19,7 @@ function App() {
         <Route element={<MainView fullScreen={allowFullScreen} />}>
           <Route path='/matcho' element={<Matcho />} />
           <Route path='/result' element={<Result />} />
+          <Route path='/monopolygame' element={<MonopolyGame />} />
           <Route path='/iframes/:id' element={<IframeView />} />
 
           <Route path="*" element={<PageNotFound />} />

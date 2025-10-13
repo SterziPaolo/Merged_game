@@ -51,15 +51,15 @@ export default function ProfileContent({ jobProfileLoaded, handleJobProfileLoad,
                                     <h4 className="font-medium text-sm text-[#4b5563] mb-2">COMPETENZE RICHIESTE</h4>
                                     <ul className="space-y-1">
                                         <li className="flex items-center">
-                                            <div className="w-2 h-2 rounded-full bg-green-500 mr-2"></div>
+                                            <div className="w-2 h-2 rounded-full bg-[#22c55e] mr-2"></div>
                                             <span>React.js e Node.js (3+ anni)</span>
                                         </li>
                                         <li className="flex items-center">
-                                            <div className="w-2 h-2 rounded-full bg-green-500 mr-2"></div>
+                                            <div className="w-2 h-2 rounded-full bg-[#22c55e] mr-2"></div>
                                             <span>Esperienza con API REST</span>
                                         </li>
                                         <li className="flex items-center">
-                                            <div className="w-2 h-2 rounded-full bg-green-500 mr-2"></div>
+                                            <div className="w-2 h-2 rounded-full bg-[#22c55e] mr-2"></div>
                                             <span>Database SQL e NoSQL</span>
                                         </li>
                                     </ul>
@@ -69,15 +69,15 @@ export default function ProfileContent({ jobProfileLoaded, handleJobProfileLoad,
                                     <h4 className="font-medium text-sm text-[#4b5563] mb-2">SOFT SKILLS</h4>
                                     <ul className="space-y-1">
                                         <li className="flex items-center">
-                                            <div className="w-2 h-2 rounded-full bg-green-500 mr-2"></div>
+                                            <div className="w-2 h-2 rounded-full bg-[#22c55e] mr-2"></div>
                                             <span>Lavoro in team distribuito</span>
                                         </li>
                                         <li className="flex items-center">
-                                            <div className="w-2 h-2 rounded-full bg-green-500 mr-2"></div>
+                                            <div className="w-2 h-2 rounded-full bg-[#22c55e] mr-2"></div>
                                             <span>Problem solving creativo</span>
                                         </li>
                                         <li className="flex items-center">
-                                            <div className="w-2 h-2 rounded-full bg-green-500 mr-2"></div>
+                                            <div className="w-2 h-2 rounded-full bg-[#22c55e] mr-2"></div>
                                             <span>Comunicazione efficace</span>
                                         </li>
                                     </ul>
