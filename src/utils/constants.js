@@ -11,8 +11,8 @@ export const TEXT_INFORMATION = [
 ]
 
 export const STATIC_NAVIGATE_TO = [
-    '/monopolygame',
     '/matcho',
+    '/monopolygame',
     '/lifetrack',
     '/result'
 ]
