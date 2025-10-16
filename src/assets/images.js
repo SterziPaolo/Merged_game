@@ -30,6 +30,9 @@ import stepUpLeader from '/assets/images/vignettes/step-up-leader.png';
 import strategicThinking from '/assets/images/vignettes/strategic-thinking.png';
 import teamMeeting from '/assets/images/vignettes/team-meeting.png';
 import workBalance from '/assets/images/vignettes/work-balance.png';
+import backgroundUs from '/assets/images/background-us.jpg';
+import backgroundRoom from '/assets/images/background-room.png';
+import backgroundCollaboration from '/assets/images/background-collaboration.png';
 
 export {
   decisionIcon,
@@ -64,4 +67,7 @@ export {
   strategicThinking,
   teamMeeting,
   workBalance,
+  backgroundUs,
+  backgroundRoom,
+  backgroundCollaboration
 };
