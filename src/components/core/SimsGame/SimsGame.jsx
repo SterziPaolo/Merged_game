@@ -91,20 +91,12 @@ const SimsGame = () => {
     );
   }
 
-  if (phase === 'decisions' && candidateStates) {
+  if (['decisions', 'report'].includes(phase) && candidateStates) {
     return (
       <DecisionMaking
         candidateState={candidateStates}
         onDecisionMade={handleDecisionMade}
         onSimulationComplete={handleSimulationComplete}
-      />
-    );
-  }
-
-  if (phase === 'report' && candidateStates) {
-    return (
-      <Report
-        onRestart={handleRestart}
       />
     );
   }
