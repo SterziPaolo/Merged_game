@@ -105,7 +105,7 @@ const GameBoard = ({
               )}
               <Button 
                 onClick={onRollDice} 
-                disabled={currentDecision !== null}
+                disabled={currentDecision !== null || gameState.gamePhase === 'ended'}
                 className="bg-[#16a34a] hover:bg-green-700"
               >
                 Lancia Dadi

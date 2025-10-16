@@ -101,6 +101,7 @@ export default function DecisionMaking({
   const [isLoading, setIsLoading] = useState(true);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showFeedback, setShowFeedback] = useState(false);
+  const [allDisabled, setAllDisabled] = useState(false)
 
   const generateScenario = () => {
     setIsLoading(true);
@@ -205,6 +206,7 @@ export default function DecisionMaking({
 
       if (candidateState.currentAge >= 27) {
         onSimulationComplete();
+        setAllDisabled(true)
       } else {
         onDecisionMade(completedDecision, newTraits);
       }
@@ -270,7 +272,7 @@ export default function DecisionMaking({
                   selectedOption === index ? 'border-[#4a4fde] bg-[#4a4fde]/5' : ''
                 } ${selectedOption !== null && selectedOption !== index ? 'opacity-50' : ''}`}
                 onClick={() => handleOptionSelect(index)}
-                disabled={selectedOption !== null}
+                disabled={selectedOption !== null || allDisabled}
               >
                 <div className="flex flex-col items-center space-y-3 w-full h-full">
                   <div className="w-16 h-16 rounded-lg overflow-hidden bg-[#4a4fde1a] flex items-center justify-center">

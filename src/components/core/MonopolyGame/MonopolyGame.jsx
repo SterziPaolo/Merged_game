@@ -230,10 +230,6 @@ const MonopolyGame = () => {
     );
   }
 
-  if (gameState.gamePhase === 'ended') {
-    return <AssessmentPanel gameState={gameState} gameLog={gameLog} />;
-  }
-
   return (
     <div className="min-h-screen p-4">
       <div className="max-w-7xl mx-auto">
